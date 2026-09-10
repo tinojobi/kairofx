@@ -1,0 +1,17 @@
+[Unit]
+Description=FX Trading Bot (EUR/USD H1 paper)
+After=network.target
+
+[Service]
+Type=simple
+User=YOUR_VPS_USERNAME
+WorkingDirectory=/home/YOUR_VPS_USERNAME/fx-bot
+Environment="PATH=/home/YOUR_VPS_USERNAME/fx-bot-env/bin"
+ExecStart=/home/YOUR_VPS_USERNAME/fx-bot-env/bin/python bot.py
+Restart=on-failure
+RestartSec=30
+StandardOutput=append:/home/YOUR_VPS_USERNAME/fx-bot/fx-bot.out.log
+StandardError=append:/home/YOUR_VPS_USERNAME/fx-bot/fx-bot.err.log
+
+[Install]
+WantedBy=multi-user.target

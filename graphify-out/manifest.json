@@ -1,0 +1,72 @@
+{
+  "/opt/kairo-fx/settings.json": {
+    "mtime": 1779732270.3691218,
+    "ast_hash": "f1bbcdf2f62aa2843badaa6c96cb7ea4",
+    "semantic_hash": ""
+  },
+  "/opt/kairo-fx/risk.py": {
+    "mtime": 1779719385.191701,
+    "ast_hash": "1c226662d4237dea58dac312b2c972d9",
+    "semantic_hash": ""
+  },
+  "/opt/kairo-fx/fxctl": {
+    "mtime": 1779722462.3479435,
+    "ast_hash": "599955749472988150c5dd059bbf0bde",
+    "semantic_hash": ""
+  },
+  "/opt/kairo-fx/telegram_notify.py": {
+    "mtime": 1779719384.2587166,
+    "ast_hash": "6c6038be51f6dc3c2df98b4d25b986ba",
+    "semantic_hash": ""
+  },
+  "/opt/kairo-fx/signals.py": {
+    "mtime": 1779719366.544012,
+    "ast_hash": "2798b73d68125f2d8b22afbfbd644b8a",
+    "semantic_hash": ""
+  },
+  "/opt/kairo-fx/oanda_client.py": {
+    "mtime": 1779737697.959033,
+    "ast_hash": "bf88c5b127fd87afefea5654c1501029",
+    "semantic_hash": ""
+  },
+  "/opt/kairo-fx/config.py": {
+    "mtime": 1779722229.3115096,
+    "ast_hash": "f30516bebc1bfdcb470256c64f419d9d",
+    "semantic_hash": ""
+  },
+  "/opt/kairo-fx/bot.py": {
+    "mtime": 1779719378.836807,
+    "ast_hash": "8b60a974105d710efda4e4b19d788e67",
+    "semantic_hash": ""
+  },
+  "/opt/kairo-fx/db.py": {
+    "mtime": 1779719390.403614,
+    "ast_hash": "edb73564f7409e4c7acff5d0afe99097",
+    "semantic_hash": ""
+  },
+  "/opt/kairo-fx/test_connection.py": {
+    "mtime": 1779722379.6202173,
+    "ast_hash": "d4e849fb7d5496537eed94cbc8e731c0",
+    "semantic_hash": ""
+  },
+  "/opt/kairo-fx/ai_advisor.py": {
+    "mtime": 1779731735.6300058,
+    "ast_hash": "698026df7439f7ecb20449ea6d732abf",
+    "semantic_hash": ""
+  },
+  "/opt/kairo-fx/requirements.txt": {
+    "mtime": 1779719387.0236704,
+    "ast_hash": "b3a473c80ae034fe0f9a5ae5ad726e94",
+    "semantic_hash": ""
+  },
+  "/opt/kairo-fx/README.md": {
+    "mtime": 1779719380.576778,
+    "ast_hash": "87e8c210dfa7a98dc0e8eae76dfee532",
+    "semantic_hash": ""
+  },
+  "/opt/kairo-fx/AGENT.md": {
+    "mtime": 1779719381.840757,
+    "ast_hash": "b46f9cd5d067d297cd0f4a0d32913041",
+    "semantic_hash": ""
+  }
+}

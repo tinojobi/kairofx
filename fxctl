@@ -1,0 +1,418 @@
+#!/opt/kairo-fx/.venv/bin/python3
+"""fxctl: command-line control for the FX bot. Designed to be agent-friendly.
+
+USAGE
+  fxctl status                       Show bot status, account, open positions
+  fxctl positions                    List open positions
+  fxctl signals [--limit N]          Show recent signals from DB
+  fxctl alert-delivery [--limit N]   Show recent alert delivery evidence
+  fxctl trades  [--limit N]          Show recent trades from DB
+
+  fxctl settings                     Print current settings.json
+  fxctl get <KEY>                    Read one setting
+  fxctl set <KEY> <VALUE>            Update one setting (with safety bounds)
+
+  fxctl patterns                     List patterns and toggle state
+  fxctl pattern <name> on|off        Toggle a candlestick pattern
+
+  fxctl pause                        Stop opening new trades (existing stay open)
+  fxctl resume                       Resume opening trades
+
+  fxctl start                        systemctl start fx-bot
+  fxctl stop                         systemctl stop fx-bot
+  fxctl restart                      systemctl restart fx-bot
+  fxctl logs [--lines N]             Tail recent log lines
+
+  fxctl close <instrument>           Close one open position
+  fxctl close-all --yes-i-am-sure    Close all open positions (requires confirmation)
+
+  fxctl test                         Run connection test
+  fxctl help                         Show this message
+
+Output is JSON when --json is passed, otherwise human-readable tables.
+"""
+import argparse
+import json
+import shutil
+import subprocess
+import sqlite3
+import sys
+from pathlib import Path
+
+# Make sibling modules importable when this script is symlinked elsewhere
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+
+import config
+
+
+# ---------- helpers ----------
+
+def _print(obj, as_json: bool):
+    if as_json:
+        print(json.dumps(obj, indent=2, default=str))
+    else:
+        if isinstance(obj, (dict, list)):
+            print(json.dumps(obj, indent=2, default=str))
+        else:
+            print(obj)
+
+
+def _systemctl(action: str) -> int:
+    if not shutil.which("systemctl"):
+        print("systemctl not found. Run the bot manually with: python bot.py")
+        return 1
+    r = subprocess.run(["sudo", "systemctl", action, "fx-bot"])
+    return r.returncode
+
+
+# ---------- commands ----------
+
+def cmd_status(args):
+    from oanda_client import OandaClient
+    settings = config.load_settings()
+    client = OandaClient()
+    acct = client.get_account_summary()
+    pos = client.get_open_positions()
+    out = {
+        "trading_enabled": settings["TRADING_ENABLED"],
+        "env": config.OANDA_ENV,
+        "instrument": settings["INSTRUMENT"],
+        "timeframe": settings["TIMEFRAME"],
+        "account": acct,
+        "open_position_count": len(pos),
+        "risk_per_trade_pct": settings["RISK_PER_TRADE_PCT"],
+        "min_ai_score": settings["MIN_AI_SCORE"],
+        "require_macd_alignment": settings.get("REQUIRE_MACD_ALIGNMENT", False),
+        "advisor_mode": settings.get("ADVISOR_MODE", "openai"),
+    }
+    _print(out, args.json)
+
+
+def cmd_positions(args):
+    from oanda_client import OandaClient
+    client = OandaClient()
+    pos = client.get_open_positions()
+    out = []
+    for p in pos:
+        long_units = int(p["long"]["units"])
+        short_units = int(p["short"]["units"])
+        side = "long" if long_units > 0 else "short" if short_units < 0 else "flat"
+        out.append({
+            "instrument": p["instrument"],
+            "side": side,
+            "units": long_units if side == "long" else short_units,
+            "unrealized_pl": float(p.get("unrealizedPL", 0)),
+        })
+    _print(out, args.json)
+
+
+def cmd_signals(args):
+    with sqlite3.connect(config.DB_PATH) as c:
+        c.row_factory = sqlite3.Row
+        rows = c.execute(
+            "SELECT ts, direction, pattern, rsi, macd_state, ai_score, action_taken "
+            "FROM signals ORDER BY id DESC LIMIT ?", (args.limit,)
+        ).fetchall()
+    _print([dict(r) for r in rows], args.json)
+
+
+def cmd_alert_delivery(args):
+    import db
+
+    rows = db.get_recent_alert_signals(args.limit)
+    out = []
+    for row in rows:
+        details = row.get("details") or {}
+        delivery = details.get("telegram_delivery") or {}
+        out.append({
+            "id": row["id"],
+            "ts": row["ts"],
+            "action_taken": row["action_taken"],
+            "direction": row["direction"],
+            "pattern": row["pattern"],
+            "ai_score": row["ai_score"],
+            "delivered": delivery.get("delivered"),
+            "delivery_mode": delivery.get("mode"),
+            "fallback_used": delivery.get("fallback_used"),
+            "message_id": delivery.get("message_id"),
+            "chat_id": delivery.get("chat_id"),
+            "status_code": delivery.get("status_code"),
+            "description": delivery.get("description") or delivery.get("response_text") or delivery.get("exception"),
+            "details": details,
+        })
+    _print(out, args.json)
+
+
+def cmd_trades(args):
+    with sqlite3.connect(config.DB_PATH) as c:
+        c.row_factory = sqlite3.Row
+        rows = c.execute(
+            "SELECT ts, instrument, direction, units, entry, stop_loss, take_profit "
+            "FROM trades ORDER BY id DESC LIMIT ?", (args.limit,)
+        ).fetchall()
+    _print([dict(r) for r in rows], args.json)
+
+
+def cmd_performance_report(args):
+    from performance_report import build_local_performance_report, render_operator_summary
+
+    report = build_local_performance_report(recent_days=args.recent_days)
+    if args.format == "summary":
+        print(render_operator_summary(report))
+    else:
+        _print(report, args.json)
+
+
+def cmd_closed_performance(args):
+    from performance_report import build_closed_performance_report
+
+    try:
+        report = build_closed_performance_report(broker=args.broker, count=args.count)
+    except NotImplementedError as e:
+        print(f"Error: {e}", file=sys.stderr)
+        sys.exit(2)
+    _print(report, args.json)
+
+
+def _build_status_payload():
+    from oanda_client import OandaClient
+
+    settings = config.load_settings()
+    client = OandaClient()
+    account = client.get_account_summary()
+    positions = client.get_open_positions()
+    normalized_positions = []
+    for p in positions:
+        long_units = int(p["long"]["units"])
+        short_units = int(p["short"]["units"])
+        side = "long" if long_units > 0 else "short" if short_units < 0 else "flat"
+        normalized_positions.append({
+            "instrument": p["instrument"],
+            "side": side,
+            "units": long_units if side == "long" else short_units,
+            "unrealized_pl": float(p.get("unrealizedPL", 0)),
+        })
+    return {
+        "trading_enabled": settings["TRADING_ENABLED"],
+        "env": config.OANDA_ENV,
+        "instrument": settings["INSTRUMENT"],
+        "timeframe": settings["TIMEFRAME"],
+        "account": account,
+        "open_position_count": len(normalized_positions),
+        "risk_per_trade_pct": settings["RISK_PER_TRADE_PCT"],
+        "min_ai_score": settings["MIN_AI_SCORE"],
+        "require_macd_alignment": settings.get("REQUIRE_MACD_ALIGNMENT", False),
+        "advisor_mode": settings.get("ADVISOR_MODE", "openai"),
+    }, normalized_positions
+
+
+def cmd_daily_digest(args):
+    from performance_report import build_closed_performance_report, build_daily_digest, build_local_performance_report
+
+    status, positions = _build_status_payload()
+    local_report = build_local_performance_report(recent_days=args.recent_days)
+    closed_report = build_closed_performance_report(broker=args.broker, count=args.count)
+    digest = build_daily_digest(
+        status=status,
+        positions=positions,
+        local_report=local_report,
+        closed_report=closed_report,
+    )
+    print(digest)
+
+
+def cmd_backtest(args):
+    from backtest import run_backtest, serialize_backtest
+    from oanda_client import OandaClient
+
+    settings = config.load_settings()
+    client = OandaClient()
+    candles = client.get_candles(settings["INSTRUMENT"], settings["TIMEFRAME"], args.count)
+    result = serialize_backtest(
+        run_backtest(
+            candles,
+            instrument=settings["INSTRUMENT"],
+            starting_balance=args.starting_balance,
+            risk_per_trade_pct=args.risk_per_trade_pct,
+        )
+    )
+    _print(result, args.json)
+
+
+def cmd_settings(args):
+    _print(config.load_settings(), args.json)
+
+
+def cmd_get(args):
+    settings = config.load_settings()
+    if args.key not in settings:
+        print(f"Unknown key: {args.key}", file=sys.stderr)
+        sys.exit(2)
+    _print({args.key: settings[args.key]}, args.json)
+
+
+def cmd_set(args):
+    try:
+        coerced = config.validate_setting(args.key, args.value)
+    except ValueError as e:
+        print(f"Error: {e}", file=sys.stderr)
+        sys.exit(2)
+    settings = config.load_settings()
+    old = settings.get(args.key)
+    settings[args.key] = coerced
+    config.save_settings(settings)
+    _print({"changed": args.key, "old": old, "new": coerced}, args.json)
+
+
+def cmd_patterns(args):
+    settings = config.load_settings()
+    out = {k: v for k, v in settings.items() if k.startswith("PATTERN_")}
+    _print(out, args.json)
+
+
+def cmd_pattern(args):
+    key = f"PATTERN_{args.name.upper()}"
+    settings = config.load_settings()
+    if key not in settings:
+        valid = [k.replace("PATTERN_", "").lower() for k in settings if k.startswith("PATTERN_")]
+        print(f"Unknown pattern '{args.name}'. Valid: {', '.join(valid)}", file=sys.stderr)
+        sys.exit(2)
+    val = args.state.lower() in ("on", "true", "1", "yes")
+    settings[key] = val
+    config.save_settings(settings)
+    _print({"changed": key, "new": val}, args.json)
+
+
+def cmd_pause(args):
+    settings = config.load_settings()
+    settings["TRADING_ENABLED"] = False
+    config.save_settings(settings)
+    _print({"trading_enabled": False, "note": "Existing positions remain open."}, args.json)
+
+
+def cmd_resume(args):
+    settings = config.load_settings()
+    settings["TRADING_ENABLED"] = True
+    config.save_settings(settings)
+    _print({"trading_enabled": True}, args.json)
+
+
+def cmd_start(args): sys.exit(_systemctl("start"))
+def cmd_stop(args):  sys.exit(_systemctl("stop"))
+def cmd_restart(args): sys.exit(_systemctl("restart"))
+
+
+def cmd_logs(args):
+    path = Path(config.LOG_PATH)
+    if not path.exists():
+        print(f"No log file at {path}", file=sys.stderr)
+        sys.exit(1)
+    with open(path) as f:
+        lines = f.readlines()
+    for line in lines[-args.lines:]:
+        print(line.rstrip())
+
+
+def cmd_close(args):
+    from oandapyV20.endpoints.positions import PositionClose
+    from oanda_client import OandaClient
+    client = OandaClient()
+    # Close both long and short legs if either has units
+    req = PositionClose(
+        accountID=client.account_id,
+        instrument=args.instrument,
+        data={"longUnits": "ALL", "shortUnits": "ALL"},
+    )
+    try:
+        client.api.request(req)
+        _print({"closed": args.instrument, "response": req.response}, args.json)
+    except Exception as e:
+        # If only one side existed, OANDA errors. Try each individually.
+        for side_key in ("longUnits", "shortUnits"):
+            try:
+                req = PositionClose(
+                    accountID=client.account_id,
+                    instrument=args.instrument,
+                    data={side_key: "ALL"},
+                )
+                client.api.request(req)
+                _print({"closed": args.instrument, "side": side_key, "response": req.response}, args.json)
+                return
+            except Exception:
+                continue
+        print(f"Failed to close {args.instrument}: {e}", file=sys.stderr)
+        sys.exit(1)
+
+
+def cmd_close_all(args):
+    if not args.yes_i_am_sure:
+        print("Refusing. Re-run with: fxctl close-all --yes-i-am-sure", file=sys.stderr)
+        sys.exit(2)
+    from oanda_client import OandaClient
+    client = OandaClient()
+    pos = client.get_open_positions()
+    results = []
+    for p in pos:
+        sub_args = argparse.Namespace(instrument=p["instrument"], json=True)
+        try:
+            cmd_close(sub_args)
+            results.append({"instrument": p["instrument"], "ok": True})
+        except SystemExit:
+            results.append({"instrument": p["instrument"], "ok": False})
+    _print(results, args.json)
+
+
+def cmd_test(args):
+    r = subprocess.run([sys.executable, "test_connection.py"])
+    sys.exit(r.returncode)
+
+
+# ---------- entry point ----------
+
+def build_parser():
+    p = argparse.ArgumentParser(prog="fxctl", description="FX bot control CLI")
+    p.add_argument("--json", action="store_true", help="output JSON")
+    sub = p.add_subparsers(dest="command", required=True)
+
+    sub.add_parser("status").set_defaults(func=cmd_status)
+    sub.add_parser("positions").set_defaults(func=cmd_positions)
+
+    sp = sub.add_parser("signals"); sp.add_argument("--limit", type=int, default=10); sp.set_defaults(func=cmd_signals)
+    sp = sub.add_parser("alert-delivery"); sp.add_argument("--limit", type=int, default=10); sp.set_defaults(func=cmd_alert_delivery)
+    sp = sub.add_parser("trades");  sp.add_argument("--limit", type=int, default=10); sp.set_defaults(func=cmd_trades)
+    sp = sub.add_parser("performance-report"); sp.add_argument("--recent-days", type=int, default=30); sp.add_argument("--format", choices=["json", "summary"], default="json"); sp.set_defaults(func=cmd_performance_report)
+    sp = sub.add_parser("closed-performance"); sp.add_argument("--broker", default="oanda", choices=["oanda", "mt5"]); sp.add_argument("--count", type=int, default=100); sp.set_defaults(func=cmd_closed_performance)
+    sp = sub.add_parser("daily-digest"); sp.add_argument("--broker", default="oanda", choices=["oanda", "mt5"]); sp.add_argument("--count", type=int, default=100); sp.add_argument("--recent-days", type=int, default=30); sp.set_defaults(func=cmd_daily_digest)
+    sp = sub.add_parser("backtest"); sp.add_argument("--count", type=int, default=500); sp.add_argument("--starting-balance", type=float, default=10000.0); sp.add_argument("--risk-per-trade-pct", type=float, default=1.0); sp.set_defaults(func=cmd_backtest)
+
+    sub.add_parser("settings").set_defaults(func=cmd_settings)
+    sp = sub.add_parser("get"); sp.add_argument("key"); sp.set_defaults(func=cmd_get)
+    sp = sub.add_parser("set"); sp.add_argument("key"); sp.add_argument("value"); sp.set_defaults(func=cmd_set)
+
+    sub.add_parser("patterns").set_defaults(func=cmd_patterns)
+    sp = sub.add_parser("pattern"); sp.add_argument("name"); sp.add_argument("state", choices=["on", "off"]); sp.set_defaults(func=cmd_pattern)
+
+    sub.add_parser("pause").set_defaults(func=cmd_pause)
+    sub.add_parser("resume").set_defaults(func=cmd_resume)
+    sub.add_parser("start").set_defaults(func=cmd_start)
+    sub.add_parser("stop").set_defaults(func=cmd_stop)
+    sub.add_parser("restart").set_defaults(func=cmd_restart)
+
+    sp = sub.add_parser("logs"); sp.add_argument("--lines", type=int, default=50); sp.set_defaults(func=cmd_logs)
+
+    sp = sub.add_parser("close"); sp.add_argument("instrument"); sp.set_defaults(func=cmd_close)
+    sp = sub.add_parser("close-all"); sp.add_argument("--yes-i-am-sure", action="store_true"); sp.set_defaults(func=cmd_close_all)
+
+    sub.add_parser("test").set_defaults(func=cmd_test)
+
+    return p
+
+
+def main():
+    parser = build_parser()
+    args = parser.parse_args()
+    args.func(args)
+
+
+if __name__ == "__main__":
+    main()

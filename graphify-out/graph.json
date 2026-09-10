@@ -1,0 +1,4045 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "settings.json",
+      "file_type": "code",
+      "source_file": "settings.json",
+      "source_location": "L1",
+      "id": "settings_json",
+      "community": 0,
+      "norm_label": "settings.json"
+    },
+    {
+      "label": "INSTRUMENT",
+      "file_type": "code",
+      "source_file": "settings.json",
+      "source_location": "L2",
+      "id": "kairo_fx_settings_instrument",
+      "community": 0,
+      "norm_label": "instrument"
+    },
+    {
+      "label": "TIMEFRAME",
+      "file_type": "code",
+      "source_file": "settings.json",
+      "source_location": "L3",
+      "id": "kairo_fx_settings_timeframe",
+      "community": 0,
+      "norm_label": "timeframe"
+    },
+    {
+      "label": "CANDLE_HISTORY",
+      "file_type": "code",
+      "source_file": "settings.json",
+      "source_location": "L4",
+      "id": "kairo_fx_settings_candle_history",
+      "community": 0,
+      "norm_label": "candle_history"
+    },
+    {
+      "label": "RISK_PER_TRADE_PCT",
+      "file_type": "code",
+      "source_file": "settings.json",
+      "source_location": "L5",
+      "id": "kairo_fx_settings_risk_per_trade_pct",
+      "community": 0,
+      "norm_label": "risk_per_trade_pct"
+    },
+    {
+      "label": "REWARD_TO_RISK",
+      "file_type": "code",
+      "source_file": "settings.json",
+      "source_location": "L6",
+      "id": "kairo_fx_settings_reward_to_risk",
+      "community": 0,
+      "norm_label": "reward_to_risk"
+    },
+    {
+      "label": "MAX_OPEN_POSITIONS",
+      "file_type": "code",
+      "source_file": "settings.json",
+      "source_location": "L7",
+      "id": "kairo_fx_settings_max_open_positions",
+      "community": 0,
+      "norm_label": "max_open_positions"
+    },
+    {
+      "label": "DAILY_LOSS_LIMIT_PCT",
+      "file_type": "code",
+      "source_file": "settings.json",
+      "source_location": "L8",
+      "id": "kairo_fx_settings_daily_loss_limit_pct",
+      "community": 0,
+      "norm_label": "daily_loss_limit_pct"
+    },
+    {
+      "label": "ATR_PERIOD",
+      "file_type": "code",
+      "source_file": "settings.json",
+      "source_location": "L9",
+      "id": "kairo_fx_settings_atr_period",
+      "community": 0,
+      "norm_label": "atr_period"
+    },
+    {
+      "label": "ATR_MULTIPLIER_SL",
+      "file_type": "code",
+      "source_file": "settings.json",
+      "source_location": "L10",
+      "id": "kairo_fx_settings_atr_multiplier_sl",
+      "community": 0,
+      "norm_label": "atr_multiplier_sl"
+    },
+    {
+      "label": "RSI_PERIOD",
+      "file_type": "code",
+      "source_file": "settings.json",
+      "source_location": "L11",
+      "id": "kairo_fx_settings_rsi_period",
+      "community": 0,
+      "norm_label": "rsi_period"
+    },
+    {
+      "label": "RSI_LONG_MAX",
+      "file_type": "code",
+      "source_file": "settings.json",
+      "source_location": "L12",
+      "id": "kairo_fx_settings_rsi_long_max",
+      "community": 0,
+      "norm_label": "rsi_long_max"
+    },
+    {
+      "label": "RSI_SHORT_MIN",
+      "file_type": "code",
+      "source_file": "settings.json",
+      "source_location": "L13",
+      "id": "kairo_fx_settings_rsi_short_min",
+      "community": 0,
+      "norm_label": "rsi_short_min"
+    },
+    {
+      "label": "MACD_FAST",
+      "file_type": "code",
+      "source_file": "settings.json",
+      "source_location": "L14",
+      "id": "kairo_fx_settings_macd_fast",
+      "community": 0,
+      "norm_label": "macd_fast"
+    },
+    {
+      "label": "MACD_SLOW",
+      "file_type": "code",
+      "source_file": "settings.json",
+      "source_location": "L15",
+      "id": "kairo_fx_settings_macd_slow",
+      "community": 0,
+      "norm_label": "macd_slow"
+    },
+    {
+      "label": "MACD_SIGNAL",
+      "file_type": "code",
+      "source_file": "settings.json",
+      "source_location": "L16",
+      "id": "kairo_fx_settings_macd_signal",
+      "community": 0,
+      "norm_label": "macd_signal"
+    },
+    {
+      "label": "MIN_AI_SCORE",
+      "file_type": "code",
+      "source_file": "settings.json",
+      "source_location": "L17",
+      "id": "kairo_fx_settings_min_ai_score",
+      "community": 0,
+      "norm_label": "min_ai_score"
+    },
+    {
+      "label": "PATTERN_BULLISH_ENGULFING",
+      "file_type": "code",
+      "source_file": "settings.json",
+      "source_location": "L18",
+      "id": "kairo_fx_settings_pattern_bullish_engulfing",
+      "community": 0,
+      "norm_label": "pattern_bullish_engulfing"
+    },
+    {
+      "label": "PATTERN_BEARISH_ENGULFING",
+      "file_type": "code",
+      "source_file": "settings.json",
+      "source_location": "L19",
+      "id": "kairo_fx_settings_pattern_bearish_engulfing",
+      "community": 0,
+      "norm_label": "pattern_bearish_engulfing"
+    },
+    {
+      "label": "PATTERN_HAMMER",
+      "file_type": "code",
+      "source_file": "settings.json",
+      "source_location": "L20",
+      "id": "kairo_fx_settings_pattern_hammer",
+      "community": 0,
+      "norm_label": "pattern_hammer"
+    },
+    {
+      "label": "PATTERN_SHOOTING_STAR",
+      "file_type": "code",
+      "source_file": "settings.json",
+      "source_location": "L21",
+      "id": "kairo_fx_settings_pattern_shooting_star",
+      "community": 0,
+      "norm_label": "pattern_shooting_star"
+    },
+    {
+      "label": "PATTERN_DOJI",
+      "file_type": "code",
+      "source_file": "settings.json",
+      "source_location": "L22",
+      "id": "kairo_fx_settings_pattern_doji",
+      "community": 0,
+      "norm_label": "pattern_doji"
+    },
+    {
+      "label": "NO_TRADE_FRI_AFTER_UTC_HOUR",
+      "file_type": "code",
+      "source_file": "settings.json",
+      "source_location": "L23",
+      "id": "kairo_fx_settings_no_trade_fri_after_utc_hour",
+      "community": 0,
+      "norm_label": "no_trade_fri_after_utc_hour"
+    },
+    {
+      "label": "NO_TRADE_WEEKEND",
+      "file_type": "code",
+      "source_file": "settings.json",
+      "source_location": "L24",
+      "id": "kairo_fx_settings_no_trade_weekend",
+      "community": 0,
+      "norm_label": "no_trade_weekend"
+    },
+    {
+      "label": "TRADING_ENABLED",
+      "file_type": "code",
+      "source_file": "settings.json",
+      "source_location": "L25",
+      "id": "kairo_fx_settings_trading_enabled",
+      "community": 0,
+      "norm_label": "trading_enabled"
+    },
+    {
+      "label": "ADVISOR_MODE",
+      "file_type": "code",
+      "source_file": "settings.json",
+      "source_location": "L26",
+      "id": "kairo_fx_settings_advisor_mode",
+      "community": 0,
+      "norm_label": "advisor_mode"
+    },
+    {
+      "label": "ATHENA_TIMEOUT_SECONDS",
+      "file_type": "code",
+      "source_file": "settings.json",
+      "source_location": "L27",
+      "id": "kairo_fx_settings_athena_timeout_seconds",
+      "community": 0,
+      "norm_label": "athena_timeout_seconds"
+    },
+    {
+      "label": "risk.py",
+      "file_type": "code",
+      "source_file": "risk.py",
+      "source_location": "L1",
+      "id": "risk_py",
+      "community": 1,
+      "norm_label": "risk.py"
+    },
+    {
+      "label": "calc_sl_tp()",
+      "file_type": "code",
+      "source_file": "risk.py",
+      "source_location": "L14",
+      "id": "kairo_fx_risk_calc_sl_tp",
+      "community": 1,
+      "norm_label": "calc_sl_tp()"
+    },
+    {
+      "label": "Signal",
+      "file_type": "code",
+      "source_file": "risk.py",
+      "source_location": "L14",
+      "id": "risk_py_signal",
+      "community": 1,
+      "norm_label": "signal"
+    },
+    {
+      "label": "float",
+      "file_type": "code",
+      "source_file": "risk.py",
+      "source_location": "L14",
+      "id": "risk_py_float",
+      "community": 1,
+      "norm_label": "float"
+    },
+    {
+      "label": "calc_position_size()",
+      "file_type": "code",
+      "source_file": "risk.py",
+      "source_location": "L32",
+      "id": "kairo_fx_risk_calc_position_size",
+      "community": 1,
+      "norm_label": "calc_position_size()"
+    },
+    {
+      "label": "str",
+      "file_type": "code",
+      "source_file": "risk.py",
+      "source_location": "L32",
+      "id": "risk_py_str",
+      "community": 1,
+      "norm_label": "str"
+    },
+    {
+      "label": "int",
+      "file_type": "code",
+      "source_file": "risk.py",
+      "source_location": "L32",
+      "id": "risk_py_int",
+      "community": 1,
+      "norm_label": "int"
+    },
+    {
+      "label": "validate_trade_conditions()",
+      "file_type": "code",
+      "source_file": "risk.py",
+      "source_location": "L54",
+      "id": "kairo_fx_risk_validate_trade_conditions",
+      "community": 1,
+      "norm_label": "validate_trade_conditions()"
+    },
+    {
+      "label": "bool",
+      "file_type": "code",
+      "source_file": "risk.py",
+      "source_location": "L54",
+      "id": "risk_py_bool",
+      "community": 1,
+      "norm_label": "bool"
+    },
+    {
+      "label": "Risk management: position size, stop loss, take profit.  For EUR/USD on a USD-de",
+      "file_type": "rationale",
+      "source_file": "risk.py",
+      "source_location": "L1",
+      "id": "kairo_fx_risk_rationale_1",
+      "community": 1,
+      "norm_label": "risk management: position size, stop loss, take profit.  for eur/usd on a usd-de"
+    },
+    {
+      "label": "Calculate stop loss and take profit prices based on ATR.",
+      "file_type": "rationale",
+      "source_file": "risk.py",
+      "source_location": "L15",
+      "id": "kairo_fx_risk_rationale_15",
+      "community": 1,
+      "norm_label": "calculate stop loss and take profit prices based on atr."
+    },
+    {
+      "label": "Returns number of units to trade so that loss-at-SL equals RISK_PER_TRADE_PCT of",
+      "file_type": "rationale",
+      "source_file": "risk.py",
+      "source_location": "L33",
+      "id": "kairo_fx_risk_rationale_33",
+      "community": 1,
+      "norm_label": "returns number of units to trade so that loss-at-sl equals risk_per_trade_pct of"
+    },
+    {
+      "label": "Return (ok, reason). Checks position limits and daily loss limit.",
+      "file_type": "rationale",
+      "source_file": "risk.py",
+      "source_location": "L55",
+      "id": "kairo_fx_risk_rationale_55",
+      "community": 1,
+      "norm_label": "return (ok, reason). checks position limits and daily loss limit."
+    },
+    {
+      "label": "telegram_notify.py",
+      "file_type": "code",
+      "source_file": "telegram_notify.py",
+      "source_location": "L1",
+      "id": "telegram_notify_py",
+      "community": 10,
+      "norm_label": "telegram_notify.py"
+    },
+    {
+      "label": "send()",
+      "file_type": "code",
+      "source_file": "telegram_notify.py",
+      "source_location": "L9",
+      "id": "kairo_fx_telegram_notify_send",
+      "community": 10,
+      "norm_label": "send()"
+    },
+    {
+      "label": "str",
+      "file_type": "code",
+      "source_file": "telegram_notify.py",
+      "source_location": "L9",
+      "id": "telegram_notify_py_str",
+      "community": 10,
+      "norm_label": "str"
+    },
+    {
+      "label": "Telegram alerts. Silent if not configured.",
+      "file_type": "rationale",
+      "source_file": "telegram_notify.py",
+      "source_location": "L1",
+      "id": "kairo_fx_telegram_notify_rationale_1",
+      "community": 10,
+      "norm_label": "telegram alerts. silent if not configured."
+    },
+    {
+      "label": "signals.py",
+      "file_type": "code",
+      "source_file": "signals.py",
+      "source_location": "L1",
+      "id": "signals_py",
+      "community": 5,
+      "norm_label": "signals.py"
+    },
+    {
+      "label": "Signal",
+      "file_type": "code",
+      "source_file": "signals.py",
+      "source_location": "L17",
+      "id": "kairo_fx_signals_signal",
+      "community": 1,
+      "norm_label": "signal"
+    },
+    {
+      "label": ".to_dict()",
+      "file_type": "code",
+      "source_file": "signals.py",
+      "source_location": "L28",
+      "id": "kairo_fx_signals_signal_to_dict",
+      "community": 1,
+      "norm_label": ".to_dict()"
+    },
+    {
+      "label": "rsi()",
+      "file_type": "code",
+      "source_file": "signals.py",
+      "source_location": "L34",
+      "id": "kairo_fx_signals_rsi",
+      "community": 5,
+      "norm_label": "rsi()"
+    },
+    {
+      "label": "Series",
+      "file_type": "code",
+      "source_file": "signals.py",
+      "source_location": "L34",
+      "id": "series",
+      "community": 5,
+      "norm_label": "series"
+    },
+    {
+      "label": "int",
+      "file_type": "code",
+      "source_file": "signals.py",
+      "source_location": "L34",
+      "id": "signals_py_int",
+      "community": 5,
+      "norm_label": "int"
+    },
+    {
+      "label": "macd()",
+      "file_type": "code",
+      "source_file": "signals.py",
+      "source_location": "L44",
+      "id": "kairo_fx_signals_macd",
+      "community": 5,
+      "norm_label": "macd()"
+    },
+    {
+      "label": "atr()",
+      "file_type": "code",
+      "source_file": "signals.py",
+      "source_location": "L53",
+      "id": "kairo_fx_signals_atr",
+      "community": 5,
+      "norm_label": "atr()"
+    },
+    {
+      "label": "DataFrame",
+      "file_type": "code",
+      "source_file": "signals.py",
+      "source_location": "L53",
+      "id": "signals_py_dataframe",
+      "community": 5,
+      "norm_label": "dataframe"
+    },
+    {
+      "label": "is_bullish_engulfing()",
+      "file_type": "code",
+      "source_file": "signals.py",
+      "source_location": "L64",
+      "id": "kairo_fx_signals_is_bullish_engulfing",
+      "community": 5,
+      "norm_label": "is_bullish_engulfing()"
+    },
+    {
+      "label": "bool",
+      "file_type": "code",
+      "source_file": "signals.py",
+      "source_location": "L64",
+      "id": "signals_py_bool",
+      "community": 5,
+      "norm_label": "bool"
+    },
+    {
+      "label": "is_bearish_engulfing()",
+      "file_type": "code",
+      "source_file": "signals.py",
+      "source_location": "L73",
+      "id": "kairo_fx_signals_is_bearish_engulfing",
+      "community": 5,
+      "norm_label": "is_bearish_engulfing()"
+    },
+    {
+      "label": "is_hammer()",
+      "file_type": "code",
+      "source_file": "signals.py",
+      "source_location": "L82",
+      "id": "kairo_fx_signals_is_hammer",
+      "community": 5,
+      "norm_label": "is_hammer()"
+    },
+    {
+      "label": "is_shooting_star()",
+      "file_type": "code",
+      "source_file": "signals.py",
+      "source_location": "L96",
+      "id": "kairo_fx_signals_is_shooting_star",
+      "community": 5,
+      "norm_label": "is_shooting_star()"
+    },
+    {
+      "label": "is_doji()",
+      "file_type": "code",
+      "source_file": "signals.py",
+      "source_location": "L110",
+      "id": "kairo_fx_signals_is_doji",
+      "community": 5,
+      "norm_label": "is_doji()"
+    },
+    {
+      "label": "detect_signal()",
+      "file_type": "code",
+      "source_file": "signals.py",
+      "source_location": "L118",
+      "id": "kairo_fx_signals_detect_signal",
+      "community": 5,
+      "norm_label": "detect_signal()"
+    },
+    {
+      "label": "Candlestick patterns and indicator-based signals.  Returns a Signal dict with: d",
+      "file_type": "rationale",
+      "source_file": "signals.py",
+      "source_location": "L1",
+      "id": "kairo_fx_signals_rationale_1",
+      "community": 5,
+      "norm_label": "candlestick patterns and indicator-based signals.  returns a signal dict with: d"
+    },
+    {
+      "label": "Analyze the just-closed candle and return a Signal.",
+      "file_type": "rationale",
+      "source_file": "signals.py",
+      "source_location": "L119",
+      "id": "kairo_fx_signals_rationale_119",
+      "community": 5,
+      "norm_label": "analyze the just-closed candle and return a signal."
+    },
+    {
+      "label": "oanda_client.py",
+      "file_type": "code",
+      "source_file": "oanda_client.py",
+      "source_location": "L1",
+      "id": "oanda_client_py",
+      "community": 4,
+      "norm_label": "oanda_client.py"
+    },
+    {
+      "label": "OandaClient",
+      "file_type": "code",
+      "source_file": "oanda_client.py",
+      "source_location": "L14",
+      "id": "kairo_fx_oanda_client_oandaclient",
+      "community": 4,
+      "norm_label": "oandaclient"
+    },
+    {
+      "label": ".__init__()",
+      "file_type": "code",
+      "source_file": "oanda_client.py",
+      "source_location": "L15",
+      "id": "kairo_fx_oanda_client_oandaclient_init",
+      "community": 4,
+      "norm_label": ".__init__()"
+    },
+    {
+      "label": ".get_candles()",
+      "file_type": "code",
+      "source_file": "oanda_client.py",
+      "source_location": "L22",
+      "id": "kairo_fx_oanda_client_oandaclient_get_candles",
+      "community": 7,
+      "norm_label": ".get_candles()"
+    },
+    {
+      "label": "str",
+      "file_type": "code",
+      "source_file": "oanda_client.py",
+      "source_location": "L22",
+      "id": "oanda_client_py_str",
+      "community": 7,
+      "norm_label": "str"
+    },
+    {
+      "label": "int",
+      "file_type": "code",
+      "source_file": "oanda_client.py",
+      "source_location": "L22",
+      "id": "oanda_client_py_int",
+      "community": 7,
+      "norm_label": "int"
+    },
+    {
+      "label": "DataFrame",
+      "file_type": "code",
+      "source_file": "oanda_client.py",
+      "source_location": "L22",
+      "id": "oanda_client_py_dataframe",
+      "community": 7,
+      "norm_label": "dataframe"
+    },
+    {
+      "label": ".get_current_price()",
+      "file_type": "code",
+      "source_file": "oanda_client.py",
+      "source_location": "L53",
+      "id": "kairo_fx_oanda_client_oandaclient_get_current_price",
+      "community": 7,
+      "norm_label": ".get_current_price()"
+    },
+    {
+      "label": ".get_account_summary()",
+      "file_type": "code",
+      "source_file": "oanda_client.py",
+      "source_location": "L62",
+      "id": "kairo_fx_oanda_client_oandaclient_get_account_summary",
+      "community": 7,
+      "norm_label": ".get_account_summary()"
+    },
+    {
+      "label": ".get_open_positions()",
+      "file_type": "code",
+      "source_file": "oanda_client.py",
+      "source_location": "L74",
+      "id": "kairo_fx_oanda_client_oandaclient_get_open_positions",
+      "community": 4,
+      "norm_label": ".get_open_positions()"
+    },
+    {
+      "label": ".place_market_order()",
+      "file_type": "code",
+      "source_file": "oanda_client.py",
+      "source_location": "L80",
+      "id": "kairo_fx_oanda_client_oandaclient_place_market_order",
+      "community": 7,
+      "norm_label": ".place_market_order()"
+    },
+    {
+      "label": "float",
+      "file_type": "code",
+      "source_file": "oanda_client.py",
+      "source_location": "L80",
+      "id": "oanda_client_py_float",
+      "community": 7,
+      "norm_label": "float"
+    },
+    {
+      "label": "OANDA REST API wrapper. Handles candles, orders, account info, positions.",
+      "file_type": "rationale",
+      "source_file": "oanda_client.py",
+      "source_location": "L1",
+      "id": "kairo_fx_oanda_client_rationale_1",
+      "community": 4,
+      "norm_label": "oanda rest api wrapper. handles candles, orders, account info, positions."
+    },
+    {
+      "label": "Return last N completed candles as a DataFrame.",
+      "file_type": "rationale",
+      "source_file": "oanda_client.py",
+      "source_location": "L23",
+      "id": "kairo_fx_oanda_client_rationale_23",
+      "community": 7,
+      "norm_label": "return last n completed candles as a dataframe."
+    },
+    {
+      "label": "Return current bid/ask.",
+      "file_type": "rationale",
+      "source_file": "oanda_client.py",
+      "source_location": "L54",
+      "id": "kairo_fx_oanda_client_rationale_54",
+      "community": 7,
+      "norm_label": "return current bid/ask."
+    },
+    {
+      "label": "Place a market order with SL and TP attached.",
+      "file_type": "rationale",
+      "source_file": "oanda_client.py",
+      "source_location": "L87",
+      "id": "kairo_fx_oanda_client_rationale_87",
+      "community": 7,
+      "norm_label": "place a market order with sl and tp attached."
+    },
+    {
+      "label": "config.py",
+      "file_type": "code",
+      "source_file": "config.py",
+      "source_location": "L1",
+      "id": "config_py",
+      "community": 9,
+      "norm_label": "config.py"
+    },
+    {
+      "label": "load_settings()",
+      "file_type": "code",
+      "source_file": "config.py",
+      "source_location": "L92",
+      "id": "kairo_fx_config_load_settings",
+      "community": 9,
+      "norm_label": "load_settings()"
+    },
+    {
+      "label": "save_settings()",
+      "file_type": "code",
+      "source_file": "config.py",
+      "source_location": "L104",
+      "id": "kairo_fx_config_save_settings",
+      "community": 9,
+      "norm_label": "save_settings()"
+    },
+    {
+      "label": "validate_setting()",
+      "file_type": "code",
+      "source_file": "config.py",
+      "source_location": "L108",
+      "id": "kairo_fx_config_validate_setting",
+      "community": 9,
+      "norm_label": "validate_setting()"
+    },
+    {
+      "label": "str",
+      "file_type": "code",
+      "source_file": "config.py",
+      "source_location": "L108",
+      "id": "config_py_str",
+      "community": 9,
+      "norm_label": "str"
+    },
+    {
+      "label": "__getattr__()",
+      "file_type": "code",
+      "source_file": "config.py",
+      "source_location": "L138",
+      "id": "kairo_fx_config_getattr",
+      "community": 9,
+      "norm_label": "__getattr__()"
+    },
+    {
+      "label": "Central config. Reads .env for secrets, settings.json for tunable params.  The a",
+      "file_type": "rationale",
+      "source_file": "config.py",
+      "source_location": "L1",
+      "id": "kairo_fx_config_rationale_1",
+      "community": 9,
+      "norm_label": "central config. reads .env for secrets, settings.json for tunable params.  the a"
+    },
+    {
+      "label": "Raise ValueError if value is out of safety bounds. Returns coerced value.",
+      "file_type": "rationale",
+      "source_file": "config.py",
+      "source_location": "L109",
+      "id": "kairo_fx_config_rationale_109",
+      "community": 9,
+      "norm_label": "raise valueerror if value is out of safety bounds. returns coerced value."
+    },
+    {
+      "label": "bot.py",
+      "file_type": "code",
+      "source_file": "bot.py",
+      "source_location": "L1",
+      "id": "bot_py",
+      "community": 4,
+      "norm_label": "bot.py"
+    },
+    {
+      "label": "is_trading_window()",
+      "file_type": "code",
+      "source_file": "bot.py",
+      "source_location": "L23",
+      "id": "kairo_fx_bot_is_trading_window",
+      "community": 4,
+      "norm_label": "is_trading_window()"
+    },
+    {
+      "label": "datetime",
+      "file_type": "code",
+      "source_file": "bot.py",
+      "source_location": "L23",
+      "id": "datetime",
+      "community": 4,
+      "norm_label": "datetime"
+    },
+    {
+      "label": "bool",
+      "file_type": "code",
+      "source_file": "bot.py",
+      "source_location": "L23",
+      "id": "bot_py_bool",
+      "community": 4,
+      "norm_label": "bool"
+    },
+    {
+      "label": "str",
+      "file_type": "code",
+      "source_file": "bot.py",
+      "source_location": "L23",
+      "id": "bot_py_str",
+      "community": 4,
+      "norm_label": "str"
+    },
+    {
+      "label": "seconds_until_next_h1_close()",
+      "file_type": "code",
+      "source_file": "bot.py",
+      "source_location": "L33",
+      "id": "kairo_fx_bot_seconds_until_next_h1_close",
+      "community": 4,
+      "norm_label": "seconds_until_next_h1_close()"
+    },
+    {
+      "label": "float",
+      "file_type": "code",
+      "source_file": "bot.py",
+      "source_location": "L33",
+      "id": "bot_py_float",
+      "community": 4,
+      "norm_label": "float"
+    },
+    {
+      "label": "run_one_tick()",
+      "file_type": "code",
+      "source_file": "bot.py",
+      "source_location": "L42",
+      "id": "kairo_fx_bot_run_one_tick",
+      "community": 4,
+      "norm_label": "run_one_tick()"
+    },
+    {
+      "label": "OandaClient",
+      "file_type": "code",
+      "source_file": "bot.py",
+      "source_location": "L42",
+      "id": "oandaclient",
+      "community": 4,
+      "norm_label": "oandaclient"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "bot.py",
+      "source_location": "L121",
+      "id": "kairo_fx_bot_main",
+      "community": 4,
+      "norm_label": "main()"
+    },
+    {
+      "label": "Main trading loop. Runs forever, ticks on H1 candle close.",
+      "file_type": "rationale",
+      "source_file": "bot.py",
+      "source_location": "L1",
+      "id": "kairo_fx_bot_rationale_1",
+      "community": 4,
+      "norm_label": "main trading loop. runs forever, ticks on h1 candle close."
+    },
+    {
+      "label": "Block weekend and Friday-late trading.",
+      "file_type": "rationale",
+      "source_file": "bot.py",
+      "source_location": "L24",
+      "id": "kairo_fx_bot_rationale_24",
+      "community": 4,
+      "norm_label": "block weekend and friday-late trading."
+    },
+    {
+      "label": "db.py",
+      "file_type": "code",
+      "source_file": "db.py",
+      "source_location": "L1",
+      "id": "db_py",
+      "community": 8,
+      "norm_label": "db.py"
+    },
+    {
+      "label": "_conn()",
+      "file_type": "code",
+      "source_file": "db.py",
+      "source_location": "L8",
+      "id": "kairo_fx_db_conn",
+      "community": 8,
+      "norm_label": "_conn()"
+    },
+    {
+      "label": "init()",
+      "file_type": "code",
+      "source_file": "db.py",
+      "source_location": "L12",
+      "id": "kairo_fx_db_init",
+      "community": 8,
+      "norm_label": "init()"
+    },
+    {
+      "label": "log_signal()",
+      "file_type": "code",
+      "source_file": "db.py",
+      "source_location": "L43",
+      "id": "kairo_fx_db_log_signal",
+      "community": 8,
+      "norm_label": "log_signal()"
+    },
+    {
+      "label": "str",
+      "file_type": "code",
+      "source_file": "db.py",
+      "source_location": "L43",
+      "id": "db_py_str",
+      "community": 8,
+      "norm_label": "str"
+    },
+    {
+      "label": "log_trade()",
+      "file_type": "code",
+      "source_file": "db.py",
+      "source_location": "L58",
+      "id": "kairo_fx_db_log_trade",
+      "community": 8,
+      "norm_label": "log_trade()"
+    },
+    {
+      "label": "int",
+      "file_type": "code",
+      "source_file": "db.py",
+      "source_location": "L58",
+      "id": "db_py_int",
+      "community": 8,
+      "norm_label": "int"
+    },
+    {
+      "label": "float",
+      "file_type": "code",
+      "source_file": "db.py",
+      "source_location": "L58",
+      "id": "db_py_float",
+      "community": 8,
+      "norm_label": "float"
+    },
+    {
+      "label": "get_today_trades()",
+      "file_type": "code",
+      "source_file": "db.py",
+      "source_location": "L69",
+      "id": "kairo_fx_db_get_today_trades",
+      "community": 8,
+      "norm_label": "get_today_trades()"
+    },
+    {
+      "label": "SQLite logging for signals and trades.",
+      "file_type": "rationale",
+      "source_file": "db.py",
+      "source_location": "L1",
+      "id": "kairo_fx_db_rationale_1",
+      "community": 8,
+      "norm_label": "sqlite logging for signals and trades."
+    },
+    {
+      "label": "test_connection.py",
+      "file_type": "code",
+      "source_file": "test_connection.py",
+      "source_location": "L1",
+      "id": "test_connection_py",
+      "community": 1,
+      "norm_label": "test_connection.py"
+    },
+    {
+      "label": "test_oanda()",
+      "file_type": "code",
+      "source_file": "test_connection.py",
+      "source_location": "L10",
+      "id": "kairo_fx_test_connection_test_oanda",
+      "community": 1,
+      "norm_label": "test_oanda()"
+    },
+    {
+      "label": "test_openai()",
+      "file_type": "code",
+      "source_file": "test_connection.py",
+      "source_location": "L21",
+      "id": "kairo_fx_test_connection_test_openai",
+      "community": 1,
+      "norm_label": "test_openai()"
+    },
+    {
+      "label": "test_telegram()",
+      "file_type": "code",
+      "source_file": "test_connection.py",
+      "source_location": "L32",
+      "id": "kairo_fx_test_connection_test_telegram",
+      "community": 1,
+      "norm_label": "test_telegram()"
+    },
+    {
+      "label": "Quick test that all three services work before running the bot.",
+      "file_type": "rationale",
+      "source_file": "test_connection.py",
+      "source_location": "L1",
+      "id": "kairo_fx_test_connection_rationale_1",
+      "community": 1,
+      "norm_label": "quick test that all three services work before running the bot."
+    },
+    {
+      "label": "ai_advisor.py",
+      "file_type": "code",
+      "source_file": "ai_advisor.py",
+      "source_location": "L1",
+      "id": "ai_advisor_py",
+      "community": 3,
+      "norm_label": "ai_advisor.py"
+    },
+    {
+      "label": "_get_client()",
+      "file_type": "code",
+      "source_file": "ai_advisor.py",
+      "source_location": "L21",
+      "id": "kairo_fx_ai_advisor_get_client",
+      "community": 3,
+      "norm_label": "_get_client()"
+    },
+    {
+      "label": "OpenAI",
+      "file_type": "code",
+      "source_file": "ai_advisor.py",
+      "source_location": "L21",
+      "id": "openai",
+      "community": 3,
+      "norm_label": "openai"
+    },
+    {
+      "label": "_setup_payload()",
+      "file_type": "code",
+      "source_file": "ai_advisor.py",
+      "source_location": "L79",
+      "id": "kairo_fx_ai_advisor_setup_payload",
+      "community": 3,
+      "norm_label": "_setup_payload()"
+    },
+    {
+      "label": "Signal",
+      "file_type": "code",
+      "source_file": "ai_advisor.py",
+      "source_location": "L79",
+      "id": "ai_advisor_py_signal",
+      "community": 3,
+      "norm_label": "signal"
+    },
+    {
+      "label": "float",
+      "file_type": "code",
+      "source_file": "ai_advisor.py",
+      "source_location": "L79",
+      "id": "ai_advisor_py_float",
+      "community": 3,
+      "norm_label": "float"
+    },
+    {
+      "label": "_normalize_advisor_response()",
+      "file_type": "code",
+      "source_file": "ai_advisor.py",
+      "source_location": "L96",
+      "id": "kairo_fx_ai_advisor_normalize_advisor_response",
+      "community": 3,
+      "norm_label": "_normalize_advisor_response()"
+    },
+    {
+      "label": "str",
+      "file_type": "code",
+      "source_file": "ai_advisor.py",
+      "source_location": "L96",
+      "id": "ai_advisor_py_str",
+      "community": 3,
+      "norm_label": "str"
+    },
+    {
+      "label": "_extract_json_object()",
+      "file_type": "code",
+      "source_file": "ai_advisor.py",
+      "source_location": "L112",
+      "id": "kairo_fx_ai_advisor_extract_json_object",
+      "community": 3,
+      "norm_label": "_extract_json_object()"
+    },
+    {
+      "label": "_score_with_openai()",
+      "file_type": "code",
+      "source_file": "ai_advisor.py",
+      "source_location": "L128",
+      "id": "kairo_fx_ai_advisor_score_with_openai",
+      "community": 3,
+      "norm_label": "_score_with_openai()"
+    },
+    {
+      "label": "_score_with_athena()",
+      "file_type": "code",
+      "source_file": "ai_advisor.py",
+      "source_location": "L144",
+      "id": "kairo_fx_ai_advisor_score_with_athena",
+      "community": 3,
+      "norm_label": "_score_with_athena()"
+    },
+    {
+      "label": "score_setup()",
+      "file_type": "code",
+      "source_file": "ai_advisor.py",
+      "source_location": "L183",
+      "id": "kairo_fx_ai_advisor_score_setup",
+      "community": 3,
+      "norm_label": "score_setup()"
+    },
+    {
+      "label": "write_daily_summary()",
+      "file_type": "code",
+      "source_file": "ai_advisor.py",
+      "source_location": "L212",
+      "id": "kairo_fx_ai_advisor_write_daily_summary",
+      "community": 3,
+      "norm_label": "write_daily_summary()"
+    },
+    {
+      "label": "Advisor layer for candidate trade setups.  The advisor is read-only: it scores s",
+      "file_type": "rationale",
+      "source_file": "ai_advisor.py",
+      "source_location": "L1",
+      "id": "kairo_fx_ai_advisor_rationale_1",
+      "community": 3,
+      "norm_label": "advisor layer for candidate trade setups.  the advisor is read-only: it scores s"
+    },
+    {
+      "label": "Parse strict JSON, tolerating accidental surrounding text/fences.",
+      "file_type": "rationale",
+      "source_file": "ai_advisor.py",
+      "source_location": "L113",
+      "id": "kairo_fx_ai_advisor_rationale_113",
+      "community": 3,
+      "norm_label": "parse strict json, tolerating accidental surrounding text/fences."
+    },
+    {
+      "label": "Rate the setup. Returns dict with score, reasoning, red_flags, advisor.      Fai",
+      "file_type": "rationale",
+      "source_file": "ai_advisor.py",
+      "source_location": "L184",
+      "id": "kairo_fx_ai_advisor_rationale_184",
+      "community": 3,
+      "norm_label": "rate the setup. returns dict with score, reasoning, red_flags, advisor.      fai"
+    },
+    {
+      "label": "Generate a plain-English end-of-day summary.",
+      "file_type": "rationale",
+      "source_file": "ai_advisor.py",
+      "source_location": "L213",
+      "id": "kairo_fx_ai_advisor_rationale_213",
+      "community": 3,
+      "norm_label": "generate a plain-english end-of-day summary."
+    },
+    {
+      "label": "README.md",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "id": "readme_md",
+      "community": 2,
+      "norm_label": "readme.md"
+    },
+    {
+      "label": "FX Bot \u2014 EUR/USD H1 Paper Trading",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "id": "kairo_fx_readme_fx_bot_eur_usd_h1_paper_trading",
+      "community": 2,
+      "norm_label": "fx bot \u2014 eur/usd h1 paper trading"
+    },
+    {
+      "label": "Setup",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L14",
+      "id": "kairo_fx_readme_setup",
+      "community": 2,
+      "norm_label": "setup"
+    },
+    {
+      "label": "1. Get credentials",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L16",
+      "id": "kairo_fx_readme_1_get_credentials",
+      "community": 2,
+      "norm_label": "1. get credentials"
+    },
+    {
+      "label": "2. Install on VPS",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L24",
+      "id": "kairo_fx_readme_2_install_on_vps",
+      "community": 2,
+      "norm_label": "2. install on vps"
+    },
+    {
+      "label": "code:bash (sudo apt update && sudo apt install -y python3-pip python3-v)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L26",
+      "id": "kairo_fx_readme_codeblock_1",
+      "community": 2,
+      "norm_label": "code:bash (sudo apt update && sudo apt install -y python3-pip python3-v)"
+    },
+    {
+      "label": "3. Configure",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L35",
+      "id": "kairo_fx_readme_3_configure",
+      "community": 2,
+      "norm_label": "3. configure"
+    },
+    {
+      "label": "code:bash (cp .env.example .env)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L37",
+      "id": "kairo_fx_readme_codeblock_2",
+      "community": 2,
+      "norm_label": "code:bash (cp .env.example .env)"
+    },
+    {
+      "label": "4. Test connection",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L42",
+      "id": "kairo_fx_readme_4_test_connection",
+      "community": 2,
+      "norm_label": "4. test connection"
+    },
+    {
+      "label": "code:bash (python test_connection.py)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L44",
+      "id": "kairo_fx_readme_codeblock_3",
+      "community": 2,
+      "norm_label": "code:bash (python test_connection.py)"
+    },
+    {
+      "label": "5. Run",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L48",
+      "id": "kairo_fx_readme_5_run",
+      "community": 2,
+      "norm_label": "5. run"
+    },
+    {
+      "label": "code:bash (# Foreground (for testing):)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L50",
+      "id": "kairo_fx_readme_codeblock_4",
+      "community": 2,
+      "norm_label": "code:bash (# foreground (for testing):)"
+    },
+    {
+      "label": "6. Run as systemd service (recommended)",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L58",
+      "id": "kairo_fx_readme_6_run_as_systemd_service_recommended",
+      "community": 2,
+      "norm_label": "6. run as systemd service (recommended)"
+    },
+    {
+      "label": "Files",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L64",
+      "id": "kairo_fx_readme_files",
+      "community": 2,
+      "norm_label": "files"
+    },
+    {
+      "label": "Agent Management",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L83",
+      "id": "kairo_fx_readme_agent_management",
+      "community": 2,
+      "norm_label": "agent management"
+    },
+    {
+      "label": "code:block5 (You: \"How's the bot doing?\")",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L107",
+      "id": "kairo_fx_readme_codeblock_5",
+      "community": 2,
+      "norm_label": "code:block5 (you: \"how's the bot doing?\")"
+    },
+    {
+      "label": "Safety rules built in",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L119",
+      "id": "kairo_fx_readme_safety_rules_built_in",
+      "community": 2,
+      "norm_label": "safety rules built in"
+    },
+    {
+      "label": "What the bot does each hour",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L130",
+      "id": "kairo_fx_readme_what_the_bot_does_each_hour",
+      "community": 2,
+      "norm_label": "what the bot does each hour"
+    },
+    {
+      "label": "Important",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L147",
+      "id": "kairo_fx_readme_important",
+      "community": 2,
+      "norm_label": "important"
+    },
+    {
+      "label": "AGENT.md",
+      "file_type": "document",
+      "source_file": "AGENT.md",
+      "source_location": "L1",
+      "id": "agent_md",
+      "community": 6,
+      "norm_label": "agent.md"
+    },
+    {
+      "label": "AGENT.md",
+      "file_type": "document",
+      "source_file": "AGENT.md",
+      "source_location": "L1",
+      "id": "kairo_fx_agent_agent_md",
+      "community": 6,
+      "norm_label": "agent.md"
+    },
+    {
+      "label": "Project at a Glance",
+      "file_type": "document",
+      "source_file": "AGENT.md",
+      "source_location": "L5",
+      "id": "kairo_fx_agent_project_at_a_glance",
+      "community": 6,
+      "norm_label": "project at a glance"
+    },
+    {
+      "label": "Your Authority",
+      "file_type": "document",
+      "source_file": "AGENT.md",
+      "source_location": "L12",
+      "id": "kairo_fx_agent_your_authority",
+      "community": 6,
+      "norm_label": "your authority"
+    },
+    {
+      "label": "Required Behaviors",
+      "file_type": "document",
+      "source_file": "AGENT.md",
+      "source_location": "L29",
+      "id": "kairo_fx_agent_required_behaviors",
+      "community": 6,
+      "norm_label": "required behaviors"
+    },
+    {
+      "label": "Project Layout",
+      "file_type": "document",
+      "source_file": "AGENT.md",
+      "source_location": "L37",
+      "id": "kairo_fx_agent_project_layout",
+      "community": 6,
+      "norm_label": "project layout"
+    },
+    {
+      "label": "code:block1 (fx-bot/)",
+      "file_type": "document",
+      "source_file": "AGENT.md",
+      "source_location": "L39",
+      "id": "kairo_fx_agent_codeblock_1",
+      "community": 6,
+      "norm_label": "code:block1 (fx-bot/)"
+    },
+    {
+      "label": "Common Commands",
+      "file_type": "document",
+      "source_file": "AGENT.md",
+      "source_location": "L57",
+      "id": "kairo_fx_agent_common_commands",
+      "community": 6,
+      "norm_label": "common commands"
+    },
+    {
+      "label": "code:bash (# Health check)",
+      "file_type": "document",
+      "source_file": "AGENT.md",
+      "source_location": "L59",
+      "id": "kairo_fx_agent_codeblock_2",
+      "community": 6,
+      "norm_label": "code:bash (# health check)"
+    },
+    {
+      "label": "Tunable Parameters (and their bounds)",
+      "file_type": "document",
+      "source_file": "AGENT.md",
+      "source_location": "L83",
+      "id": "kairo_fx_agent_tunable_parameters_and_their_bounds",
+      "community": 6,
+      "norm_label": "tunable parameters (and their bounds)"
+    },
+    {
+      "label": "How to Add a New Candlestick Pattern",
+      "file_type": "document",
+      "source_file": "AGENT.md",
+      "source_location": "L96",
+      "id": "kairo_fx_agent_how_to_add_a_new_candlestick_pattern",
+      "community": 6,
+      "norm_label": "how to add a new candlestick pattern"
+    },
+    {
+      "label": "What to Do When the User Asks Vague Things",
+      "file_type": "document",
+      "source_file": "AGENT.md",
+      "source_location": "L106",
+      "id": "kairo_fx_agent_what_to_do_when_the_user_asks_vague_things",
+      "community": 6,
+      "norm_label": "what to do when the user asks vague things"
+    },
+    {
+      "label": "What to Refuse",
+      "file_type": "document",
+      "source_file": "AGENT.md",
+      "source_location": "L113",
+      "id": "kairo_fx_agent_what_to_refuse",
+      "community": 6,
+      "norm_label": "what to refuse"
+    },
+    {
+      "label": "Reporting Style",
+      "file_type": "document",
+      "source_file": "AGENT.md",
+      "source_location": "L120",
+      "id": "kairo_fx_agent_reporting_style",
+      "community": 6,
+      "norm_label": "reporting style"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "settings.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "settings_json",
+      "target": "kairo_fx_settings_instrument",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "settings.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "settings_json",
+      "target": "kairo_fx_settings_timeframe",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "settings.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "settings_json",
+      "target": "kairo_fx_settings_candle_history",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "settings.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "settings_json",
+      "target": "kairo_fx_settings_risk_per_trade_pct",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "settings.json",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "settings_json",
+      "target": "kairo_fx_settings_reward_to_risk",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "settings.json",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "settings_json",
+      "target": "kairo_fx_settings_max_open_positions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "settings.json",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "settings_json",
+      "target": "kairo_fx_settings_daily_loss_limit_pct",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "settings.json",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "settings_json",
+      "target": "kairo_fx_settings_atr_period",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "settings.json",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "settings_json",
+      "target": "kairo_fx_settings_atr_multiplier_sl",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "settings.json",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "settings_json",
+      "target": "kairo_fx_settings_rsi_period",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "settings.json",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "settings_json",
+      "target": "kairo_fx_settings_rsi_long_max",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "settings.json",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "settings_json",
+      "target": "kairo_fx_settings_rsi_short_min",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "settings.json",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "settings_json",
+      "target": "kairo_fx_settings_macd_fast",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "settings.json",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "settings_json",
+      "target": "kairo_fx_settings_macd_slow",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "settings.json",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "settings_json",
+      "target": "kairo_fx_settings_macd_signal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "settings.json",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "settings_json",
+      "target": "kairo_fx_settings_min_ai_score",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "settings.json",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "settings_json",
+      "target": "kairo_fx_settings_pattern_bullish_engulfing",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "settings.json",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "settings_json",
+      "target": "kairo_fx_settings_pattern_bearish_engulfing",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "settings.json",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "settings_json",
+      "target": "kairo_fx_settings_pattern_hammer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "settings.json",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "settings_json",
+      "target": "kairo_fx_settings_pattern_shooting_star",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "settings.json",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "settings_json",
+      "target": "kairo_fx_settings_pattern_doji",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "settings.json",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "settings_json",
+      "target": "kairo_fx_settings_no_trade_fri_after_utc_hour",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "settings.json",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "settings_json",
+      "target": "kairo_fx_settings_no_trade_weekend",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "settings.json",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "settings_json",
+      "target": "kairo_fx_settings_trading_enabled",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "settings.json",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "settings_json",
+      "target": "kairo_fx_settings_advisor_mode",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "settings.json",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "settings_json",
+      "target": "kairo_fx_settings_athena_timeout_seconds",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "risk.py",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "risk_py",
+      "target": "kairo_fx_risk_calc_sl_tp",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "risk.py",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "risk_py",
+      "target": "kairo_fx_risk_calc_position_size",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "risk.py",
+      "source_location": "L54",
+      "weight": 1.0,
+      "source": "risk_py",
+      "target": "kairo_fx_risk_validate_trade_conditions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "risk.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "kairo_fx_risk_rationale_1",
+      "target": "risk_py",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "risk.py",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "risk_py",
+      "target": "kairo_fx_signals_signal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "risk.py",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "kairo_fx_risk_calc_sl_tp",
+      "target": "risk_py_signal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "risk.py",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "kairo_fx_risk_calc_sl_tp",
+      "target": "risk_py_float",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "risk.py",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "kairo_fx_risk_rationale_15",
+      "target": "kairo_fx_risk_calc_sl_tp",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "bot.py",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "bot_py",
+      "target": "kairo_fx_risk_calc_sl_tp",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "bot.py",
+      "source_location": "L90",
+      "weight": 1.0,
+      "source": "kairo_fx_bot_run_one_tick",
+      "target": "kairo_fx_risk_calc_sl_tp",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "risk.py",
+      "source_location": "L9",
+      "weight": 0.8,
+      "source": "risk_py_signal",
+      "target": "kairo_fx_signals_signal",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "risk.py",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "kairo_fx_risk_calc_position_size",
+      "target": "risk_py_float",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "risk.py",
+      "source_location": "L54",
+      "weight": 1.0,
+      "source": "kairo_fx_risk_validate_trade_conditions",
+      "target": "risk_py_float",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "risk.py",
+      "source_location": "L9",
+      "weight": 0.8,
+      "source": "risk_py_float",
+      "target": "kairo_fx_signals_signal",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "risk.py",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "kairo_fx_risk_calc_position_size",
+      "target": "risk_py_str",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "risk.py",
+      "source_location": "L48",
+      "weight": 1.0,
+      "source": "kairo_fx_risk_calc_position_size",
+      "target": "risk_py_int",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "risk.py",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "kairo_fx_risk_rationale_33",
+      "target": "kairo_fx_risk_calc_position_size",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "bot.py",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "bot_py",
+      "target": "kairo_fx_risk_calc_position_size",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "bot.py",
+      "source_location": "L91",
+      "weight": 1.0,
+      "source": "kairo_fx_bot_run_one_tick",
+      "target": "kairo_fx_risk_calc_position_size",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "risk.py",
+      "source_location": "L54",
+      "weight": 1.0,
+      "source": "kairo_fx_risk_validate_trade_conditions",
+      "target": "risk_py_str",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "risk.py",
+      "source_location": "L9",
+      "weight": 0.8,
+      "source": "risk_py_str",
+      "target": "kairo_fx_signals_signal",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "risk.py",
+      "source_location": "L9",
+      "weight": 0.8,
+      "source": "risk_py_int",
+      "target": "kairo_fx_signals_signal",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "risk.py",
+      "source_location": "L54",
+      "weight": 1.0,
+      "source": "kairo_fx_risk_validate_trade_conditions",
+      "target": "risk_py_bool",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "risk.py",
+      "source_location": "L55",
+      "weight": 1.0,
+      "source": "kairo_fx_risk_rationale_55",
+      "target": "kairo_fx_risk_validate_trade_conditions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "bot.py",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "bot_py",
+      "target": "kairo_fx_risk_validate_trade_conditions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "bot.py",
+      "source_location": "L82",
+      "weight": 1.0,
+      "source": "kairo_fx_bot_run_one_tick",
+      "target": "kairo_fx_risk_validate_trade_conditions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "risk.py",
+      "source_location": "L9",
+      "weight": 0.8,
+      "source": "risk_py_bool",
+      "target": "kairo_fx_signals_signal",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "telegram_notify.py",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "telegram_notify_py",
+      "target": "kairo_fx_telegram_notify_send",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "telegram_notify.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "kairo_fx_telegram_notify_rationale_1",
+      "target": "telegram_notify_py",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "telegram_notify.py",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "kairo_fx_telegram_notify_send",
+      "target": "telegram_notify_py_str",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "signals.py",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "signals_py",
+      "target": "kairo_fx_signals_signal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "signals.py",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "signals_py",
+      "target": "kairo_fx_signals_rsi",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "signals.py",
+      "source_location": "L44",
+      "weight": 1.0,
+      "source": "signals_py",
+      "target": "kairo_fx_signals_macd",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "signals.py",
+      "source_location": "L53",
+      "weight": 1.0,
+      "source": "signals_py",
+      "target": "kairo_fx_signals_atr",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "signals.py",
+      "source_location": "L64",
+      "weight": 1.0,
+      "source": "signals_py",
+      "target": "kairo_fx_signals_is_bullish_engulfing",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "signals.py",
+      "source_location": "L73",
+      "weight": 1.0,
+      "source": "signals_py",
+      "target": "kairo_fx_signals_is_bearish_engulfing",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "signals.py",
+      "source_location": "L82",
+      "weight": 1.0,
+      "source": "signals_py",
+      "target": "kairo_fx_signals_is_hammer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "signals.py",
+      "source_location": "L96",
+      "weight": 1.0,
+      "source": "signals_py",
+      "target": "kairo_fx_signals_is_shooting_star",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "signals.py",
+      "source_location": "L110",
+      "weight": 1.0,
+      "source": "signals_py",
+      "target": "kairo_fx_signals_is_doji",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "signals.py",
+      "source_location": "L118",
+      "weight": 1.0,
+      "source": "signals_py",
+      "target": "kairo_fx_signals_detect_signal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "signals.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "kairo_fx_signals_rationale_1",
+      "target": "signals_py",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "signals.py",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "kairo_fx_signals_signal",
+      "target": "kairo_fx_signals_signal_to_dict",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "signals.py",
+      "source_location": "L121",
+      "weight": 1.0,
+      "source": "kairo_fx_signals_detect_signal",
+      "target": "kairo_fx_signals_signal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "test_connection.py",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "test_connection_py",
+      "target": "kairo_fx_signals_signal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_advisor.py",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "ai_advisor_py",
+      "target": "kairo_fx_signals_signal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "test_connection.py",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "kairo_fx_test_connection_test_openai",
+      "target": "kairo_fx_signals_signal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "ai_advisor.py",
+      "source_location": "L14",
+      "weight": 0.8,
+      "source": "openai",
+      "target": "kairo_fx_signals_signal",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "ai_advisor.py",
+      "source_location": "L14",
+      "weight": 0.8,
+      "source": "ai_advisor_py_signal",
+      "target": "kairo_fx_signals_signal",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "ai_advisor.py",
+      "source_location": "L14",
+      "weight": 0.8,
+      "source": "ai_advisor_py_float",
+      "target": "kairo_fx_signals_signal",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "ai_advisor.py",
+      "source_location": "L14",
+      "weight": 0.8,
+      "source": "ai_advisor_py_str",
+      "target": "kairo_fx_signals_signal",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "signals.py",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "kairo_fx_signals_rsi",
+      "target": "series",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "signals.py",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "kairo_fx_signals_rsi",
+      "target": "signals_py_int",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "signals.py",
+      "source_location": "L124",
+      "weight": 1.0,
+      "source": "kairo_fx_signals_detect_signal",
+      "target": "kairo_fx_signals_rsi",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "signals.py",
+      "source_location": "L44",
+      "weight": 1.0,
+      "source": "kairo_fx_signals_macd",
+      "target": "series",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "signals.py",
+      "source_location": "L53",
+      "weight": 1.0,
+      "source": "kairo_fx_signals_atr",
+      "target": "series",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "signals.py",
+      "source_location": "L53",
+      "weight": 1.0,
+      "source": "kairo_fx_signals_atr",
+      "target": "signals_py_int",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "signals.py",
+      "source_location": "L125",
+      "weight": 1.0,
+      "source": "kairo_fx_signals_detect_signal",
+      "target": "kairo_fx_signals_macd",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "signals.py",
+      "source_location": "L53",
+      "weight": 1.0,
+      "source": "kairo_fx_signals_atr",
+      "target": "signals_py_dataframe",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "signals.py",
+      "source_location": "L128",
+      "weight": 1.0,
+      "source": "kairo_fx_signals_detect_signal",
+      "target": "kairo_fx_signals_atr",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "signals.py",
+      "source_location": "L118",
+      "weight": 1.0,
+      "source": "kairo_fx_signals_detect_signal",
+      "target": "signals_py_dataframe",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "signals.py",
+      "source_location": "L64",
+      "weight": 1.0,
+      "source": "kairo_fx_signals_is_bullish_engulfing",
+      "target": "signals_py_bool",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "signals.py",
+      "source_location": "L153",
+      "weight": 1.0,
+      "source": "kairo_fx_signals_detect_signal",
+      "target": "kairo_fx_signals_is_bullish_engulfing",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "signals.py",
+      "source_location": "L73",
+      "weight": 1.0,
+      "source": "kairo_fx_signals_is_bearish_engulfing",
+      "target": "signals_py_bool",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "signals.py",
+      "source_location": "L82",
+      "weight": 1.0,
+      "source": "kairo_fx_signals_is_hammer",
+      "target": "signals_py_bool",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "signals.py",
+      "source_location": "L96",
+      "weight": 1.0,
+      "source": "kairo_fx_signals_is_shooting_star",
+      "target": "signals_py_bool",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "signals.py",
+      "source_location": "L110",
+      "weight": 1.0,
+      "source": "kairo_fx_signals_is_doji",
+      "target": "signals_py_bool",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "signals.py",
+      "source_location": "L155",
+      "weight": 1.0,
+      "source": "kairo_fx_signals_detect_signal",
+      "target": "kairo_fx_signals_is_bearish_engulfing",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "signals.py",
+      "source_location": "L157",
+      "weight": 1.0,
+      "source": "kairo_fx_signals_detect_signal",
+      "target": "kairo_fx_signals_is_hammer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "signals.py",
+      "source_location": "L159",
+      "weight": 1.0,
+      "source": "kairo_fx_signals_detect_signal",
+      "target": "kairo_fx_signals_is_shooting_star",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "signals.py",
+      "source_location": "L161",
+      "weight": 1.0,
+      "source": "kairo_fx_signals_detect_signal",
+      "target": "kairo_fx_signals_is_doji",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "signals.py",
+      "source_location": "L119",
+      "weight": 1.0,
+      "source": "kairo_fx_signals_rationale_119",
+      "target": "kairo_fx_signals_detect_signal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "bot.py",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "bot_py",
+      "target": "kairo_fx_signals_detect_signal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "bot.py",
+      "source_location": "L59",
+      "weight": 1.0,
+      "source": "kairo_fx_bot_run_one_tick",
+      "target": "kairo_fx_signals_detect_signal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "oanda_client.py",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "oanda_client_py",
+      "target": "kairo_fx_oanda_client_oandaclient",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "oanda_client.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "kairo_fx_oanda_client_rationale_1",
+      "target": "oanda_client_py",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "oanda_client.py",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "kairo_fx_oanda_client_oandaclient",
+      "target": "kairo_fx_oanda_client_oandaclient_init",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "oanda_client.py",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "kairo_fx_oanda_client_oandaclient",
+      "target": "kairo_fx_oanda_client_oandaclient_get_candles",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "oanda_client.py",
+      "source_location": "L53",
+      "weight": 1.0,
+      "source": "kairo_fx_oanda_client_oandaclient",
+      "target": "kairo_fx_oanda_client_oandaclient_get_current_price",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "oanda_client.py",
+      "source_location": "L62",
+      "weight": 1.0,
+      "source": "kairo_fx_oanda_client_oandaclient",
+      "target": "kairo_fx_oanda_client_oandaclient_get_account_summary",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "oanda_client.py",
+      "source_location": "L74",
+      "weight": 1.0,
+      "source": "kairo_fx_oanda_client_oandaclient",
+      "target": "kairo_fx_oanda_client_oandaclient_get_open_positions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "oanda_client.py",
+      "source_location": "L80",
+      "weight": 1.0,
+      "source": "kairo_fx_oanda_client_oandaclient",
+      "target": "kairo_fx_oanda_client_oandaclient_place_market_order",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "bot.py",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "bot_py",
+      "target": "kairo_fx_oanda_client_oandaclient",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "test_connection.py",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "test_connection_py",
+      "target": "kairo_fx_oanda_client_oandaclient",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "bot.py",
+      "source_location": "L123",
+      "weight": 1.0,
+      "source": "kairo_fx_bot_main",
+      "target": "kairo_fx_oanda_client_oandaclient",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "test_connection.py",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "kairo_fx_test_connection_test_oanda",
+      "target": "kairo_fx_oanda_client_oandaclient",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "bot.py",
+      "source_location": "L9",
+      "weight": 0.8,
+      "source": "datetime",
+      "target": "kairo_fx_oanda_client_oandaclient",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "bot.py",
+      "source_location": "L9",
+      "weight": 0.8,
+      "source": "bot_py_bool",
+      "target": "kairo_fx_oanda_client_oandaclient",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "bot.py",
+      "source_location": "L9",
+      "weight": 0.8,
+      "source": "bot_py_str",
+      "target": "kairo_fx_oanda_client_oandaclient",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "bot.py",
+      "source_location": "L9",
+      "weight": 0.8,
+      "source": "bot_py_float",
+      "target": "kairo_fx_oanda_client_oandaclient",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "bot.py",
+      "source_location": "L9",
+      "weight": 0.8,
+      "source": "oandaclient",
+      "target": "kairo_fx_oanda_client_oandaclient",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "oanda_client.py",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "kairo_fx_oanda_client_oandaclient_get_candles",
+      "target": "oanda_client_py_str",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "oanda_client.py",
+      "source_location": "L48",
+      "weight": 1.0,
+      "source": "kairo_fx_oanda_client_oandaclient_get_candles",
+      "target": "oanda_client_py_int",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "oanda_client.py",
+      "source_location": "L50",
+      "weight": 1.0,
+      "source": "kairo_fx_oanda_client_oandaclient_get_candles",
+      "target": "oanda_client_py_dataframe",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "oanda_client.py",
+      "source_location": "L44",
+      "weight": 1.0,
+      "source": "kairo_fx_oanda_client_oandaclient_get_candles",
+      "target": "oanda_client_py_float",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "oanda_client.py",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "kairo_fx_oanda_client_rationale_23",
+      "target": "kairo_fx_oanda_client_oandaclient_get_candles",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "oanda_client.py",
+      "source_location": "L53",
+      "weight": 1.0,
+      "source": "kairo_fx_oanda_client_oandaclient_get_current_price",
+      "target": "oanda_client_py_str",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "oanda_client.py",
+      "source_location": "L92",
+      "weight": 1.0,
+      "source": "kairo_fx_oanda_client_oandaclient_place_market_order",
+      "target": "oanda_client_py_str",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "oanda_client.py",
+      "source_location": "L80",
+      "weight": 1.0,
+      "source": "kairo_fx_oanda_client_oandaclient_place_market_order",
+      "target": "oanda_client_py_int",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "oanda_client.py",
+      "source_location": "L70",
+      "weight": 1.0,
+      "source": "kairo_fx_oanda_client_oandaclient_get_account_summary",
+      "target": "oanda_client_py_int",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "oanda_client.py",
+      "source_location": "L59",
+      "weight": 1.0,
+      "source": "kairo_fx_oanda_client_oandaclient_get_current_price",
+      "target": "oanda_client_py_float",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "oanda_client.py",
+      "source_location": "L54",
+      "weight": 1.0,
+      "source": "kairo_fx_oanda_client_rationale_54",
+      "target": "kairo_fx_oanda_client_oandaclient_get_current_price",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "oanda_client.py",
+      "source_location": "L67",
+      "weight": 1.0,
+      "source": "kairo_fx_oanda_client_oandaclient_get_account_summary",
+      "target": "oanda_client_py_float",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "oanda_client.py",
+      "source_location": "L80",
+      "weight": 1.0,
+      "source": "kairo_fx_oanda_client_oandaclient_place_market_order",
+      "target": "oanda_client_py_float",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "oanda_client.py",
+      "source_location": "L87",
+      "weight": 1.0,
+      "source": "kairo_fx_oanda_client_rationale_87",
+      "target": "kairo_fx_oanda_client_oandaclient_place_market_order",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "config.py",
+      "source_location": "L92",
+      "weight": 1.0,
+      "source": "config_py",
+      "target": "kairo_fx_config_load_settings",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "config.py",
+      "source_location": "L104",
+      "weight": 1.0,
+      "source": "config_py",
+      "target": "kairo_fx_config_save_settings",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "config.py",
+      "source_location": "L108",
+      "weight": 1.0,
+      "source": "config_py",
+      "target": "kairo_fx_config_validate_setting",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "config.py",
+      "source_location": "L138",
+      "weight": 1.0,
+      "source": "config_py",
+      "target": "kairo_fx_config_getattr",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "config.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "kairo_fx_config_rationale_1",
+      "target": "config_py",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "config.py",
+      "source_location": "L140",
+      "weight": 1.0,
+      "source": "kairo_fx_config_getattr",
+      "target": "kairo_fx_config_load_settings",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "config.py",
+      "source_location": "L125",
+      "weight": 1.0,
+      "source": "kairo_fx_config_validate_setting",
+      "target": "config_py_str",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "config.py",
+      "source_location": "L109",
+      "weight": 1.0,
+      "source": "kairo_fx_config_rationale_109",
+      "target": "kairo_fx_config_validate_setting",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "bot.py",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "bot_py",
+      "target": "datetime",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "bot.py",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "bot_py",
+      "target": "kairo_fx_bot_is_trading_window",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "bot.py",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "bot_py",
+      "target": "kairo_fx_bot_seconds_until_next_h1_close",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "bot.py",
+      "source_location": "L42",
+      "weight": 1.0,
+      "source": "bot_py",
+      "target": "kairo_fx_bot_run_one_tick",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "bot.py",
+      "source_location": "L121",
+      "weight": 1.0,
+      "source": "bot_py",
+      "target": "kairo_fx_bot_main",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "bot.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "kairo_fx_bot_rationale_1",
+      "target": "bot_py",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "bot.py",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "bot_py",
+      "target": "kairo_fx_ai_advisor_score_setup",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "bot.py",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "bot_py",
+      "target": "kairo_fx_ai_advisor_write_daily_summary",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "bot.py",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "kairo_fx_bot_is_trading_window",
+      "target": "datetime",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "bot.py",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "kairo_fx_bot_is_trading_window",
+      "target": "bot_py_bool",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "bot.py",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "kairo_fx_bot_is_trading_window",
+      "target": "bot_py_str",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "bot.py",
+      "source_location": "L49",
+      "weight": 1.0,
+      "source": "kairo_fx_bot_run_one_tick",
+      "target": "kairo_fx_bot_is_trading_window",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "bot.py",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "kairo_fx_bot_rationale_24",
+      "target": "kairo_fx_bot_is_trading_window",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "db.py",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "db_py",
+      "target": "datetime",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "bot.py",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "kairo_fx_bot_seconds_until_next_h1_close",
+      "target": "bot_py_float",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "bot.py",
+      "source_location": "L154",
+      "weight": 1.0,
+      "source": "kairo_fx_bot_main",
+      "target": "kairo_fx_bot_seconds_until_next_h1_close",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "bot.py",
+      "source_location": "L42",
+      "weight": 1.0,
+      "source": "kairo_fx_bot_run_one_tick",
+      "target": "bot_py_float",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "bot.py",
+      "source_location": "L42",
+      "weight": 1.0,
+      "source": "kairo_fx_bot_run_one_tick",
+      "target": "oandaclient",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "bot.py",
+      "source_location": "L158",
+      "weight": 1.0,
+      "source": "kairo_fx_bot_main",
+      "target": "kairo_fx_bot_run_one_tick",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "bot.py",
+      "source_location": "L67",
+      "weight": 1.0,
+      "source": "kairo_fx_bot_run_one_tick",
+      "target": "kairo_fx_ai_advisor_score_setup",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "bot.py",
+      "source_location": "L123",
+      "weight": 1.0,
+      "source": "kairo_fx_bot_main",
+      "target": "oandaclient",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "bot.py",
+      "source_location": "L148",
+      "weight": 1.0,
+      "source": "kairo_fx_bot_main",
+      "target": "kairo_fx_ai_advisor_write_daily_summary",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "db.py",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "db_py",
+      "target": "kairo_fx_db_conn",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "db.py",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "db_py",
+      "target": "kairo_fx_db_init",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "db.py",
+      "source_location": "L43",
+      "weight": 1.0,
+      "source": "db_py",
+      "target": "kairo_fx_db_log_signal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "db.py",
+      "source_location": "L58",
+      "weight": 1.0,
+      "source": "db_py",
+      "target": "kairo_fx_db_log_trade",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "db.py",
+      "source_location": "L69",
+      "weight": 1.0,
+      "source": "db_py",
+      "target": "kairo_fx_db_get_today_trades",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "db.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "kairo_fx_db_rationale_1",
+      "target": "db_py",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "db.py",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "kairo_fx_db_init",
+      "target": "kairo_fx_db_conn",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "db.py",
+      "source_location": "L44",
+      "weight": 1.0,
+      "source": "kairo_fx_db_log_signal",
+      "target": "kairo_fx_db_conn",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "db.py",
+      "source_location": "L59",
+      "weight": 1.0,
+      "source": "kairo_fx_db_log_trade",
+      "target": "kairo_fx_db_conn",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "db.py",
+      "source_location": "L71",
+      "weight": 1.0,
+      "source": "kairo_fx_db_get_today_trades",
+      "target": "kairo_fx_db_conn",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "db.py",
+      "source_location": "L43",
+      "weight": 1.0,
+      "source": "kairo_fx_db_log_signal",
+      "target": "db_py_str",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "db.py",
+      "source_location": "L58",
+      "weight": 1.0,
+      "source": "kairo_fx_db_log_trade",
+      "target": "db_py_str",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "db.py",
+      "source_location": "L58",
+      "weight": 1.0,
+      "source": "kairo_fx_db_log_trade",
+      "target": "db_py_int",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "db.py",
+      "source_location": "L58",
+      "weight": 1.0,
+      "source": "kairo_fx_db_log_trade",
+      "target": "db_py_float",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "test_connection.py",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "test_connection_py",
+      "target": "kairo_fx_test_connection_test_oanda",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "test_connection.py",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "test_connection_py",
+      "target": "kairo_fx_test_connection_test_openai",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "test_connection.py",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "test_connection_py",
+      "target": "kairo_fx_test_connection_test_telegram",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "test_connection.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "kairo_fx_test_connection_rationale_1",
+      "target": "test_connection_py",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "test_connection.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "test_connection_py",
+      "target": "kairo_fx_ai_advisor_score_setup",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "test_connection.py",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "kairo_fx_test_connection_test_openai",
+      "target": "kairo_fx_ai_advisor_score_setup",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_advisor.py",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "ai_advisor_py",
+      "target": "openai",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_advisor.py",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "ai_advisor_py",
+      "target": "kairo_fx_ai_advisor_get_client",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_advisor.py",
+      "source_location": "L79",
+      "weight": 1.0,
+      "source": "ai_advisor_py",
+      "target": "kairo_fx_ai_advisor_setup_payload",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_advisor.py",
+      "source_location": "L96",
+      "weight": 1.0,
+      "source": "ai_advisor_py",
+      "target": "kairo_fx_ai_advisor_normalize_advisor_response",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_advisor.py",
+      "source_location": "L112",
+      "weight": 1.0,
+      "source": "ai_advisor_py",
+      "target": "kairo_fx_ai_advisor_extract_json_object",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_advisor.py",
+      "source_location": "L128",
+      "weight": 1.0,
+      "source": "ai_advisor_py",
+      "target": "kairo_fx_ai_advisor_score_with_openai",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_advisor.py",
+      "source_location": "L144",
+      "weight": 1.0,
+      "source": "ai_advisor_py",
+      "target": "kairo_fx_ai_advisor_score_with_athena",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_advisor.py",
+      "source_location": "L183",
+      "weight": 1.0,
+      "source": "ai_advisor_py",
+      "target": "kairo_fx_ai_advisor_score_setup",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_advisor.py",
+      "source_location": "L212",
+      "weight": 1.0,
+      "source": "ai_advisor_py",
+      "target": "kairo_fx_ai_advisor_write_daily_summary",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_advisor.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "kairo_fx_ai_advisor_rationale_1",
+      "target": "ai_advisor_py",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_advisor.py",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "kairo_fx_ai_advisor_get_client",
+      "target": "openai",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_advisor.py",
+      "source_location": "L130",
+      "weight": 1.0,
+      "source": "kairo_fx_ai_advisor_score_with_openai",
+      "target": "kairo_fx_ai_advisor_get_client",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_advisor.py",
+      "source_location": "L215",
+      "weight": 1.0,
+      "source": "kairo_fx_ai_advisor_write_daily_summary",
+      "target": "kairo_fx_ai_advisor_get_client",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_advisor.py",
+      "source_location": "L79",
+      "weight": 1.0,
+      "source": "kairo_fx_ai_advisor_setup_payload",
+      "target": "ai_advisor_py_signal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_advisor.py",
+      "source_location": "L79",
+      "weight": 1.0,
+      "source": "kairo_fx_ai_advisor_setup_payload",
+      "target": "ai_advisor_py_float",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_advisor.py",
+      "source_location": "L129",
+      "weight": 1.0,
+      "source": "kairo_fx_ai_advisor_score_with_openai",
+      "target": "kairo_fx_ai_advisor_setup_payload",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_advisor.py",
+      "source_location": "L145",
+      "weight": 1.0,
+      "source": "kairo_fx_ai_advisor_score_with_athena",
+      "target": "kairo_fx_ai_advisor_setup_payload",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_advisor.py",
+      "source_location": "L128",
+      "weight": 1.0,
+      "source": "kairo_fx_ai_advisor_score_with_openai",
+      "target": "ai_advisor_py_signal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_advisor.py",
+      "source_location": "L144",
+      "weight": 1.0,
+      "source": "kairo_fx_ai_advisor_score_with_athena",
+      "target": "ai_advisor_py_signal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_advisor.py",
+      "source_location": "L183",
+      "weight": 1.0,
+      "source": "kairo_fx_ai_advisor_score_setup",
+      "target": "ai_advisor_py_signal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_advisor.py",
+      "source_location": "L128",
+      "weight": 1.0,
+      "source": "kairo_fx_ai_advisor_score_with_openai",
+      "target": "ai_advisor_py_float",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_advisor.py",
+      "source_location": "L144",
+      "weight": 1.0,
+      "source": "kairo_fx_ai_advisor_score_with_athena",
+      "target": "ai_advisor_py_float",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_advisor.py",
+      "source_location": "L183",
+      "weight": 1.0,
+      "source": "kairo_fx_ai_advisor_score_setup",
+      "target": "ai_advisor_py_float",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_advisor.py",
+      "source_location": "L99",
+      "weight": 1.0,
+      "source": "kairo_fx_ai_advisor_normalize_advisor_response",
+      "target": "ai_advisor_py_str",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_advisor.py",
+      "source_location": "L141",
+      "weight": 1.0,
+      "source": "kairo_fx_ai_advisor_score_with_openai",
+      "target": "kairo_fx_ai_advisor_normalize_advisor_response",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_advisor.py",
+      "source_location": "L176",
+      "weight": 1.0,
+      "source": "kairo_fx_ai_advisor_score_with_athena",
+      "target": "kairo_fx_ai_advisor_normalize_advisor_response",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_advisor.py",
+      "source_location": "L112",
+      "weight": 1.0,
+      "source": "kairo_fx_ai_advisor_extract_json_object",
+      "target": "ai_advisor_py_str",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_advisor.py",
+      "source_location": "L212",
+      "weight": 1.0,
+      "source": "kairo_fx_ai_advisor_write_daily_summary",
+      "target": "ai_advisor_py_str",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_advisor.py",
+      "source_location": "L192",
+      "weight": 1.0,
+      "source": "kairo_fx_ai_advisor_score_setup",
+      "target": "ai_advisor_py_str",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_advisor.py",
+      "source_location": "L175",
+      "weight": 1.0,
+      "source": "kairo_fx_ai_advisor_score_with_athena",
+      "target": "kairo_fx_ai_advisor_extract_json_object",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_advisor.py",
+      "source_location": "L113",
+      "weight": 1.0,
+      "source": "kairo_fx_ai_advisor_rationale_113",
+      "target": "kairo_fx_ai_advisor_extract_json_object",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_advisor.py",
+      "source_location": "L197",
+      "weight": 1.0,
+      "source": "kairo_fx_ai_advisor_score_setup",
+      "target": "kairo_fx_ai_advisor_score_with_openai",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_advisor.py",
+      "source_location": "L195",
+      "weight": 1.0,
+      "source": "kairo_fx_ai_advisor_score_setup",
+      "target": "kairo_fx_ai_advisor_score_with_athena",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_advisor.py",
+      "source_location": "L184",
+      "weight": 1.0,
+      "source": "kairo_fx_ai_advisor_rationale_184",
+      "target": "kairo_fx_ai_advisor_score_setup",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "ai_advisor.py",
+      "source_location": "L213",
+      "weight": 1.0,
+      "source": "kairo_fx_ai_advisor_rationale_213",
+      "target": "kairo_fx_ai_advisor_write_daily_summary",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "readme_md",
+      "target": "kairo_fx_readme_fx_bot_eur_usd_h1_paper_trading",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "kairo_fx_readme_fx_bot_eur_usd_h1_paper_trading",
+      "target": "kairo_fx_readme_setup",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L64",
+      "weight": 1.0,
+      "source": "kairo_fx_readme_fx_bot_eur_usd_h1_paper_trading",
+      "target": "kairo_fx_readme_files",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L83",
+      "weight": 1.0,
+      "source": "kairo_fx_readme_fx_bot_eur_usd_h1_paper_trading",
+      "target": "kairo_fx_readme_agent_management",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L119",
+      "weight": 1.0,
+      "source": "kairo_fx_readme_fx_bot_eur_usd_h1_paper_trading",
+      "target": "kairo_fx_readme_safety_rules_built_in",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L130",
+      "weight": 1.0,
+      "source": "kairo_fx_readme_fx_bot_eur_usd_h1_paper_trading",
+      "target": "kairo_fx_readme_what_the_bot_does_each_hour",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L147",
+      "weight": 1.0,
+      "source": "kairo_fx_readme_fx_bot_eur_usd_h1_paper_trading",
+      "target": "kairo_fx_readme_important",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "kairo_fx_readme_setup",
+      "target": "kairo_fx_readme_1_get_credentials",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "kairo_fx_readme_setup",
+      "target": "kairo_fx_readme_2_install_on_vps",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L35",
+      "weight": 1.0,
+      "source": "kairo_fx_readme_setup",
+      "target": "kairo_fx_readme_3_configure",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L42",
+      "weight": 1.0,
+      "source": "kairo_fx_readme_setup",
+      "target": "kairo_fx_readme_4_test_connection",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L48",
+      "weight": 1.0,
+      "source": "kairo_fx_readme_setup",
+      "target": "kairo_fx_readme_5_run",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L58",
+      "weight": 1.0,
+      "source": "kairo_fx_readme_setup",
+      "target": "kairo_fx_readme_6_run_as_systemd_service_recommended",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "kairo_fx_readme_2_install_on_vps",
+      "target": "kairo_fx_readme_codeblock_1",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "kairo_fx_readme_3_configure",
+      "target": "kairo_fx_readme_codeblock_2",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L44",
+      "weight": 1.0,
+      "source": "kairo_fx_readme_4_test_connection",
+      "target": "kairo_fx_readme_codeblock_3",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L50",
+      "weight": 1.0,
+      "source": "kairo_fx_readme_5_run",
+      "target": "kairo_fx_readme_codeblock_4",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L107",
+      "weight": 1.0,
+      "source": "kairo_fx_readme_agent_management",
+      "target": "kairo_fx_readme_codeblock_5",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AGENT.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "agent_md",
+      "target": "kairo_fx_agent_agent_md",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AGENT.md",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "kairo_fx_agent_agent_md",
+      "target": "kairo_fx_agent_project_at_a_glance",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AGENT.md",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "kairo_fx_agent_agent_md",
+      "target": "kairo_fx_agent_your_authority",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AGENT.md",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "kairo_fx_agent_agent_md",
+      "target": "kairo_fx_agent_required_behaviors",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AGENT.md",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "kairo_fx_agent_agent_md",
+      "target": "kairo_fx_agent_project_layout",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AGENT.md",
+      "source_location": "L57",
+      "weight": 1.0,
+      "source": "kairo_fx_agent_agent_md",
+      "target": "kairo_fx_agent_common_commands",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AGENT.md",
+      "source_location": "L83",
+      "weight": 1.0,
+      "source": "kairo_fx_agent_agent_md",
+      "target": "kairo_fx_agent_tunable_parameters_and_their_bounds",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AGENT.md",
+      "source_location": "L96",
+      "weight": 1.0,
+      "source": "kairo_fx_agent_agent_md",
+      "target": "kairo_fx_agent_how_to_add_a_new_candlestick_pattern",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AGENT.md",
+      "source_location": "L106",
+      "weight": 1.0,
+      "source": "kairo_fx_agent_agent_md",
+      "target": "kairo_fx_agent_what_to_do_when_the_user_asks_vague_things",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AGENT.md",
+      "source_location": "L113",
+      "weight": 1.0,
+      "source": "kairo_fx_agent_agent_md",
+      "target": "kairo_fx_agent_what_to_refuse",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AGENT.md",
+      "source_location": "L120",
+      "weight": 1.0,
+      "source": "kairo_fx_agent_agent_md",
+      "target": "kairo_fx_agent_reporting_style",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AGENT.md",
+      "source_location": "L39",
+      "weight": 1.0,
+      "source": "kairo_fx_agent_project_layout",
+      "target": "kairo_fx_agent_codeblock_1",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "AGENT.md",
+      "source_location": "L59",
+      "weight": 1.0,
+      "source": "kairo_fx_agent_common_commands",
+      "target": "kairo_fx_agent_codeblock_2",
+      "confidence_score": 1.0
+    }
+  ],
+  "hyperedges": []
+}
