@@ -239,6 +239,33 @@ def cmd_backtest(args):
     _print(result, args.json)
 
 
+def cmd_variants(args):
+    from oanda_client import OandaClient
+    from variants import DEFAULT_GRID, save_results, sweep_variants
+
+    settings = config.load_settings()
+    client = OandaClient()
+    candles = client.get_candles(settings["INSTRUMENT"], settings["TIMEFRAME"], args.count)
+    results = sweep_variants(
+        candles,
+        grid=DEFAULT_GRID,
+        instrument=settings["INSTRUMENT"],
+        starting_balance=args.starting_balance,
+        risk_per_trade_pct=args.risk_per_trade_pct,
+        min_trades=args.min_trades,
+    )
+    meta = {
+        "candles": len(candles),
+        "instrument": settings["INSTRUMENT"],
+        "starting_balance": args.starting_balance,
+        "risk_per_trade_pct": args.risk_per_trade_pct,
+        "min_trades": args.min_trades,
+    }
+    md_path = save_results(results, meta)
+    print(f"wrote {md_path}")
+    _print(results, args.json)
+
+
 def cmd_settings(args):
     _print(config.load_settings(), args.json)
 
@@ -384,6 +411,7 @@ def build_parser():
     sp = sub.add_parser("closed-performance"); sp.add_argument("--broker", default="oanda", choices=["oanda", "mt5"]); sp.add_argument("--count", type=int, default=100); sp.set_defaults(func=cmd_closed_performance)
     sp = sub.add_parser("daily-digest"); sp.add_argument("--broker", default="oanda", choices=["oanda", "mt5"]); sp.add_argument("--count", type=int, default=100); sp.add_argument("--recent-days", type=int, default=30); sp.set_defaults(func=cmd_daily_digest)
     sp = sub.add_parser("backtest"); sp.add_argument("--count", type=int, default=500); sp.add_argument("--starting-balance", type=float, default=10000.0); sp.add_argument("--risk-per-trade-pct", type=float, default=1.0); sp.set_defaults(func=cmd_backtest)
+    sp = sub.add_parser("variants"); sp.add_argument("--count", type=int, default=500); sp.add_argument("--starting-balance", type=float, default=10000.0); sp.add_argument("--risk-per-trade-pct", type=float, default=1.0); sp.add_argument("--min-trades", type=int, default=1); sp.set_defaults(func=cmd_variants)
 
     sub.add_parser("settings").set_defaults(func=cmd_settings)
     sp = sub.add_parser("get"); sp.add_argument("key"); sp.set_defaults(func=cmd_get)
