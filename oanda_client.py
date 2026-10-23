@@ -10,6 +10,15 @@ import config
 
 log = logging.getLogger(__name__)
 
+# Retry/backoff config — extended from the original 3-attempt window to
+# cover 30-180s OANDA practice-tier outages observed in Oct 2026 (was ~31s).
+# Total wait budget at defaults: 5+10+20+40+60+60+60 = 255s; with ~8 requests
+# the full window is ~263s, comfortably over the 180s outage target.
+# Keep these constants here so a future revert is a one-line edit.
+_RETRY_ATTEMPTS = 8
+_RETRY_BACKOFF_BASE_SECONDS = 5
+_RETRY_BACKOFF_CAP_SECONDS = 60
+
 
 class OandaClient:
     def __init__(self):
@@ -31,8 +40,15 @@ class OandaClient:
             or text.startswith("401")
         )
 
-    def _request_with_retry(self, req, *, operation: str, attempts: int = 3):
-        """Run an OANDA request with bounded retry/backoff for transient failures."""
+    def _request_with_retry(self, req, *, operation: str, attempts: int = _RETRY_ATTEMPTS):
+        """Run an OANDA request with bounded retry/backoff for transient failures.
+
+        Default attempt count and backoff cap come from module-level
+        constants (`_RETRY_ATTEMPTS`, `_RETRY_BACKOFF_BASE_SECONDS`,
+        `_RETRY_BACKOFF_CAP_SECONDS`). Backoff is exponential
+        (`base * 2 ** (attempt-1)`) capped at the cap, so total wait
+        at defaults is bounded by `attempts * cap + sum`.
+        """
         last_error = None
         for attempt in range(1, attempts + 1):
             try:
@@ -53,7 +69,10 @@ class OandaClient:
                     raise
                 if auth_like:
                     self.api = self._build_api()
-                time.sleep(5 * attempt)
+                time.sleep(min(
+                    _RETRY_BACKOFF_BASE_SECONDS * (2 ** (attempt - 1)),
+                    _RETRY_BACKOFF_CAP_SECONDS,
+                ))
         raise last_error
 
     # ----- Market data -----
