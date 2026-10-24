@@ -260,6 +260,9 @@ def main(argv=None):
     p.add_argument("--list-only", action="store_true")
     args = p.parse_args(argv)
     logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
+    # oandapyV20 logs full request URLs (including the account id) at INFO.
+    logging.getLogger("oandapyV20").setLevel(logging.WARNING)
+    logging.getLogger("oandapyV20.oandapyV20").setLevel(logging.WARNING)
     return run(args)
 
 
